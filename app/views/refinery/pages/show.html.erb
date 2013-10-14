@@ -1,9 +1,34 @@
 <div class="container container-fluid">
-<div class="col-xs-12 col-sm-6 col-md-8">
-	<%= raw @page.content_for(:body) %>
-</div>
-<div class="col-xs-6 col-sm-6 col-md-4">
-	<%= raw @page.content_for(:side_body) %>
-</div>
+	<div class="row">
+		<div class="span9">
+			<%= raw @page.content_for(:body) %>
+		</div>
+
+		<div class="span4 pull-right">
+			<div id="myCarousel" class="carousel slide">
+				<!-- Carousel items -->
+				<div class="carousel-inner">
+					<% index = 0%>
+					<%@page.images.each do |image|%>
+					<%if(index == 0)%>
+					<div class="item active">
+						<img src="<%= image.url%>" alt="HTML5 logo" width="500" height="99" />
+					</div>
+					<%else%>
+					<div class="item">
+						<img src="<%= image.url%>" alt="HTML5 logo" width="500" height="99" />
+					</div>
+					<%end%>
+					<% index +=1%>
+
+					<%end%>
+				</div>
+				<!-- Carousel nav -->
+				<a class="carousel-control left" href="#myCarousel" data-slide="prev">‹</a>
+				<a class="carousel-control right" href="#myCarousel" data-slide="next">›</a>
+			</div>
+		</div>
+
+	</div>
 
 </div>
