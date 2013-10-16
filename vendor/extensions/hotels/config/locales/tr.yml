@@ -1,0 +1,57 @@
+tr:
+  refinery:
+    plugins:
+      places:
+        title: Places
+      hotels:
+        title: Hotels
+    hotels:
+      admin:
+        places:
+          actions:
+            create_new: Yeni Ekle Place
+            reorder: Tekrar sirala Places
+            reorder_done: Tekrar siralama tamamlandiPlaces
+          records:
+            title: Places
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Places yok henuz.  Tikla "Yeni Ekle Place"
+              eklemek senin ilk place.
+          place:
+            view_live_html: Bunu canlu place goruntule <br/><em>(yeni bir pencerede
+              acar)</em>
+            edit: Bunu Duzenle place
+            delete: Bunu Sil place sonsuza dek
+        hotels:
+          actions:
+            create_new: Yeni Ekle Hotel
+            reorder: Tekrar sirala Hotels
+            reorder_done: Tekrar siralama tamamlandiHotels
+          records:
+            title: Hotels
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Hotels yok henuz.  Tikla "Yeni Ekle Hotel"
+              eklemek senin ilk hotel.
+          hotel:
+            view_live_html: Bunu canlu hotel goruntule <br/><em>(yeni bir pencerede
+              acar)</em>
+            edit: Bunu Duzenle hotel
+            delete: Bunu Sil hotel sonsuza dek
+      places:
+        show:
+          other: Diger Places
+      hotels:
+        show:
+          other: Diger Hotels
+  activerecord:
+    attributes:
+      refinery/hotels/place:
+        name: Name
+      refinery/hotels/hotel:
+        name: Name
+        description: Description
+        phone_number: Phone Number
+        email: Email
+        url: Url
+        address: Address
+        teaser_id: Teaser

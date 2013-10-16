@@ -1,0 +1,27 @@
+<% content_for :body_content_title do %>
+  <%= @place.name %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Name</h1>
+    <p>
+      <%=raw @place.name %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="places">
+      <% @places.each do |place| %>
+        <li>
+          <%= link_to place.name, refinery.hotels_place_path(place) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

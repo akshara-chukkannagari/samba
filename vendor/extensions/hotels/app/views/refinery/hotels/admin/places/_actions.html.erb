@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Hotels::Admin::PlacesController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.hotels_admin_places_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_hotels_admin_place_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Hotels::Admin::PlacesController.sortable? && ::Refinery::Hotels::Place.many? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Places"),
+                 refinery.hotels_admin_places_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Places"),
+                 refinery.hotels_admin_places_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

@@ -1,0 +1,57 @@
+nb:
+  refinery:
+    plugins:
+      places:
+        title: Places
+      hotels:
+        title: Hotels
+    hotels:
+      admin:
+        places:
+          actions:
+            create_new: Lag en ny Place
+            reorder: Endre rekkefølgen på Places
+            reorder_done: Ferdig å endre rekkefølgen Places
+          records:
+            title: Places
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Places enda. Klikk på "Lag en ny Place" for
+              å legge til din første place.
+          place:
+            view_live_html: Vis hvordan denne place ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne place
+            delete: Fjern denne place permanent
+        hotels:
+          actions:
+            create_new: Lag en ny Hotel
+            reorder: Endre rekkefølgen på Hotels
+            reorder_done: Ferdig å endre rekkefølgen Hotels
+          records:
+            title: Hotels
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Hotels enda. Klikk på "Lag en ny Hotel" for
+              å legge til din første hotel.
+          hotel:
+            view_live_html: Vis hvordan denne hotel ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne hotel
+            delete: Fjern denne hotel permanent
+      places:
+        show:
+          other: Andre Places
+      hotels:
+        show:
+          other: Andre Hotels
+  activerecord:
+    attributes:
+      refinery/hotels/place:
+        name: Name
+      refinery/hotels/hotel:
+        name: Name
+        description: Description
+        phone_number: Phone Number
+        email: Email
+        url: Url
+        address: Address
+        teaser_id: Teaser

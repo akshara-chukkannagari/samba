@@ -1,6 +1,8 @@
 PATH
   remote: vendor/extensions
   specs:
+    refinerycms-hotels (1.0)
+      refinerycms-core (~> 2.1.0)
     refinerycms-snippets (1.0)
       refinerycms-core (~> 2.1.0)
 
@@ -196,6 +198,7 @@ DEPENDENCIES
   rails (= 3.2.14)
   refinerycms
   refinerycms-acts-as-indexed (~> 1.0.0)
+  refinerycms-hotels!
   refinerycms-page-images (~> 2.1.0)
   refinerycms-snippets!
   sass-rails (~> 3.2.3)

@@ -1,0 +1,55 @@
+cs:
+  refinery:
+    plugins:
+      places:
+        title: Places
+      hotels:
+        title: Hotels
+    hotels:
+      admin:
+        places:
+          actions:
+            create_new: Přidat Place
+            reorder: Řadit Places
+            reorder_done: Konec řazení Places
+          records:
+            title: Places
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Places. Zvolte "Přidat Place"
+              pro přidání prvního place.
+          place:
+            view_live_html: Zobrazit náhled place<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit place
+            delete: Smazat place
+        hotels:
+          actions:
+            create_new: Přidat Hotel
+            reorder: Řadit Hotels
+            reorder_done: Konec řazení Hotels
+          records:
+            title: Hotels
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Hotels. Zvolte "Přidat Hotel"
+              pro přidání prvního hotel.
+          hotel:
+            view_live_html: Zobrazit náhled hotel<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit hotel
+            delete: Smazat hotel
+      places:
+        show:
+          other: Další Places
+      hotels:
+        show:
+          other: Další Hotels
+  activerecord:
+    attributes:
+      refinery/hotels/place:
+        name: Name
+      refinery/hotels/hotel:
+        name: Name
+        description: Description
+        phone_number: Phone Number
+        email: Email
+        url: Url
+        address: Address
+        teaser_id: Teaser

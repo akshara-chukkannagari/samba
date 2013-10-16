@@ -1,0 +1,57 @@
+es:
+  refinery:
+    plugins:
+      places:
+        title: Places
+      hotels:
+        title: Hotels
+    hotels:
+      admin:
+        places:
+          actions:
+            create_new: Crear nuevo place
+            reorder: Reordenar places
+            reorder_done: Reordenación de places completada
+          records:
+            title: Places
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay places todavía. Pulsa en "Crear nuevo Place" para
+              crear tu primer place.
+          place:
+            view_live_html: Ver este place como abierto al público <br/><em>(abre
+              en ventana nueva)</em>
+            edit: Editar este place
+            delete: Borrar este place para siempre
+        hotels:
+          actions:
+            create_new: Crear nuevo hotel
+            reorder: Reordenar hotels
+            reorder_done: Reordenación de hotels completada
+          records:
+            title: Hotels
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay hotels todavía. Pulsa en "Crear nuevo Hotel" para
+              crear tu primer hotel.
+          hotel:
+            view_live_html: Ver este hotel como abierto al público <br/><em>(abre
+              en ventana nueva)</em>
+            edit: Editar este hotel
+            delete: Borrar este hotel para siempre
+      places:
+        show:
+          other: Otros places
+      hotels:
+        show:
+          other: Otros hotels
+  activerecord:
+    attributes:
+      refinery/hotels/place:
+        name: Name
+      refinery/hotels/hotel:
+        name: Name
+        description: Description
+        phone_number: Phone Number
+        email: Email
+        url: Url
+        address: Address
+        teaser_id: Teaser
