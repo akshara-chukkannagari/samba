@@ -1,15 +1,15 @@
 <div class="container container-fluid">
-	<div class="row home_search_form_text">
-		<div class="span9">
-			<h2 class="badge badge-info">enter your trip dates</h2>
+
+		<div class="col-md-8 home_search_form_text">
+			<h2 class="well well-sm">enter your trip dates</h2>
 			<%=form_for "home", :html => { :class=> "form-horizontal"} do |f|%>
-			<%= f.label "from", :class => "search_form_text badge"%>
+			<%= f.label "from", :class => "search_form_text label label-success"%>
 			<div class="form-group">
 				<div class="col-lg-10">
 					<%= f.text_field :start_date  %>
 				</div>
 			</div>
-			<%= f.label "till", :class => "search_form_text badge"%>
+			<%= f.label "till", :class => "search_form_text label label-success"%>
 			<div class="form-group">
 
 				<div class="col-lg-10">
@@ -23,18 +23,21 @@
 			</div>
 			<%end%>
 		</div>
+		
+		<div class="col-md-4">
+			<%@snippets.each do |snippet|%>
+			<div class="well well-sm snippet_div">
+				<p> <%= snippet.title%> </p>
+				<a href="<%= snippet.link%>" class="btn btn-success btn-xs">visit</a>
+			</div>
+			
+			<%end%>
+		</div>
 	</div>
-	<div class="span3 pull-right">
-		<h2 class="hero-unit">
-
-			here your ad goes (e.g. hotels, offers, etc)
-		</h2>
-	</div>
-</div>
 
 <script>
 	$(function() {
-$("#home_start_date").datepicker();
-$("#home_end_date").datepicker();
-});
+		$("#home_start_date").datepicker();
+		$("#home_end_date").datepicker();
+	}); 
 </script>

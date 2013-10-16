@@ -23,6 +23,7 @@
 	height: 900px;
 	background-position: center;
 	background-repeat:no-repeat;
+	background-attachment:fixed;
 }
 
 .home_search_form_text h2 {
@@ -45,4 +46,9 @@
 	color: #31B0D5;
 }
 
+.snippet_div {
+	margin-top: 5%;
+	display:inline-block ;
+	background-color: #555555;
+}
 
