@@ -16,4 +16,21 @@ Refinery::Core::Engine.routes.draw do
     end
   end
 
+
+  # Frontend routes
+  namespace :snippets do
+    resources :places, :only => [:index, :show]
+  end
+
+  # Admin routes
+  namespace :snippets, :path => '' do
+    namespace :admin, :path => "#{Refinery::Core.backend_route}/snippets" do
+      resources :places, :except => :show do
+        collection do
+          post :update_positions
+        end
+      end
+    end
+  end
+
 end

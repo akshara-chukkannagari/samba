@@ -1,10 +1,27 @@
 tr:
   refinery:
     plugins:
+      places:
+        title: Places
       snippets:
         title: Snippets
     snippets:
       admin:
+        places:
+          actions:
+            create_new: Yeni Ekle Place
+            reorder: Tekrar sirala Places
+            reorder_done: Tekrar siralama tamamlandiPlaces
+          records:
+            title: Places
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Places yok henuz.  Tikla "Yeni Ekle Place"
+              eklemek senin ilk place.
+          place:
+            view_live_html: Bunu canlu place goruntule <br/><em>(yeni bir pencerede
+              acar)</em>
+            edit: Bunu Duzenle place
+            delete: Bunu Sil place sonsuza dek
         snippets:
           actions:
             create_new: Yeni Ekle Snippet
@@ -13,17 +30,24 @@ tr:
           records:
             title: Snippets
             sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
-            no_items_yet: Herhangi bir Snippets yok henuz.  Tikla "Yeni Ekle Snippet" eklemek senin ilk snippet.
+            no_items_yet: Herhangi bir Snippets yok henuz.  Tikla "Yeni Ekle Snippet"
+              eklemek senin ilk snippet.
           snippet:
-            view_live_html: Bunu canlu snippet goruntule <br/><em>(yeni bir pencerede acar)</em>
+            view_live_html: Bunu canlu snippet goruntule <br/><em>(yeni bir pencerede
+              acar)</em>
             edit: Bunu Duzenle snippet
             delete: Bunu Sil snippet sonsuza dek
+      places:
+        show:
+          other: Diger Places
       snippets:
         show:
           other: Diger Snippets
   activerecord:
     attributes:
-      'refinery/snippets/snippet':
+      refinery/snippets/place:
+        name: Name
+      refinery/snippets/snippet:
         title: Title
         date: Date
         description: Description

@@ -1,10 +1,26 @@
 cs:
   refinery:
     plugins:
+      places:
+        title: Places
       snippets:
         title: Snippets
     snippets:
       admin:
+        places:
+          actions:
+            create_new: Přidat Place
+            reorder: Řadit Places
+            reorder_done: Konec řazení Places
+          records:
+            title: Places
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Places. Zvolte "Přidat Place"
+              pro přidání prvního place.
+          place:
+            view_live_html: Zobrazit náhled place<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit place
+            delete: Smazat place
         snippets:
           actions:
             create_new: Přidat Snippet
@@ -13,17 +29,23 @@ cs:
           records:
             title: Snippets
             sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
-            no_items_yet: Zatím nebyly vytvořeny žádné Snippets. Zvolte "Přidat Snippet" pro přidání prvního snippet.
+            no_items_yet: Zatím nebyly vytvořeny žádné Snippets. Zvolte "Přidat Snippet"
+              pro přidání prvního snippet.
           snippet:
             view_live_html: Zobrazit náhled snippet<br/><em>(otevře se v novém okně)</em>
             edit: Upravit snippet
             delete: Smazat snippet
+      places:
+        show:
+          other: Další Places
       snippets:
         show:
           other: Další Snippets
   activerecord:
     attributes:
-      'refinery/snippets/snippet':
+      refinery/snippets/place:
+        name: Name
+      refinery/snippets/snippet:
         title: Title
         date: Date
         description: Description

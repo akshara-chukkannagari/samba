@@ -1,7 +1,7 @@
 module Refinery
   module Snippets
     class SnippetsController < ::ApplicationController
-
+      layout false
       before_filter :find_all_snippets
       before_filter :find_page
 
