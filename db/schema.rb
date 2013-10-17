@@ -11,7 +11,28 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131016183730) do
+ActiveRecord::Schema.define(:version => 20131017120625) do
+
+  create_table "refinery_accomodations", :force => true do |t|
+    t.string   "name"
+    t.text     "details"
+    t.integer  "teaser_image_id"
+    t.string   "phone_number"
+    t.string   "email"
+    t.string   "url"
+    t.integer  "user_id"
+    t.integer  "position"
+    t.datetime "created_at",           :null => false
+    t.datetime "updated_at",           :null => false
+    t.integer  "accomodation_type_id"
+  end
+
+  create_table "refinery_accomodations_accomodation_types", :force => true do |t|
+    t.string   "name"
+    t.integer  "position"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "refinery_hotels", :force => true do |t|
     t.string   "name"

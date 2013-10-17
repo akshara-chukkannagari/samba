@@ -1,0 +1,57 @@
+tr:
+  refinery:
+    plugins:
+      accomodation_types:
+        title: Accomodation Types
+      accomodations:
+        title: Accomodations
+    accomodations:
+      admin:
+        accomodation_types:
+          actions:
+            create_new: Yeni Ekle Accomodation Type
+            reorder: Tekrar sirala Accomodation Types
+            reorder_done: Tekrar siralama tamamlandiAccomodation Types
+          records:
+            title: Accomodation Types
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Accomodation Types yok henuz.  Tikla "Yeni
+              Ekle Accomodation Type" eklemek senin ilk accomodation type.
+          accomodation_type:
+            view_live_html: Bunu canlu accomodation type goruntule <br/><em>(yeni
+              bir pencerede acar)</em>
+            edit: Bunu Duzenle accomodation type
+            delete: Bunu Sil accomodation type sonsuza dek
+        accomodations:
+          actions:
+            create_new: Yeni Ekle Accomodation
+            reorder: Tekrar sirala Accomodations
+            reorder_done: Tekrar siralama tamamlandiAccomodations
+          records:
+            title: Accomodations
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Accomodations yok henuz.  Tikla "Yeni Ekle
+              Accomodation" eklemek senin ilk accomodation.
+          accomodation:
+            view_live_html: Bunu canlu accomodation goruntule <br/><em>(yeni bir pencerede
+              acar)</em>
+            edit: Bunu Duzenle accomodation
+            delete: Bunu Sil accomodation sonsuza dek
+      accomodation_types:
+        show:
+          other: Diger Accomodation Types
+      accomodations:
+        show:
+          other: Diger Accomodations
+  activerecord:
+    attributes:
+      refinery/accomodations/accomodation_type:
+        name: Name
+      refinery/accomodations/accomodation:
+        name: Name
+        details: Details
+        teaser_image: Teaser Image
+        phone_number: Phone Number
+        email: Email
+        url: Url
+        user_id: User

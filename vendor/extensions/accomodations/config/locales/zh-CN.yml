@@ -1,0 +1,54 @@
+zh-CN:
+  refinery:
+    plugins:
+      accomodation_types:
+        title: Accomodation Types
+      accomodations:
+        title: Accomodations
+    accomodations:
+      admin:
+        accomodation_types:
+          actions:
+            create_new: 建立新的 Accomodation Type
+            reorder: 对 Accomodation Types 重新排序
+            reorder_done: 对 Accomodation Types 的重新排序结束
+          records:
+            title: Accomodation Types
+            sorry_no_results: 对不起，未找到结果。
+            no_items_yet: 目前没有 Accomodation Types . 点击 "Add New Accomodation Type"
+              创建一个accomodation type.
+          accomodation_type:
+            view_live_html: 查看 accomodation type 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 accomodation type
+            delete: 永久删除 accomodation type
+        accomodations:
+          actions:
+            create_new: 建立新的 Accomodation
+            reorder: 对 Accomodations 重新排序
+            reorder_done: 对 Accomodations 的重新排序结束
+          records:
+            title: Accomodations
+            sorry_no_results: 对不起，未找到结果。
+            no_items_yet: 目前没有 Accomodations . 点击 "Add New Accomodation" 创建一个accomodation.
+          accomodation:
+            view_live_html: 查看 accomodation 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 accomodation
+            delete: 永久删除 accomodation
+      accomodation_types:
+        show:
+          other: 其他 Accomodation Types
+      accomodations:
+        show:
+          other: 其他 Accomodations
+  activerecord:
+    attributes:
+      refinery/accomodations/accomodation_type:
+        name: Name
+      refinery/accomodations/accomodation:
+        name: Name
+        details: Details
+        teaser_image: Teaser Image
+        phone_number: Phone Number
+        email: Email
+        url: Url
+        user_id: User

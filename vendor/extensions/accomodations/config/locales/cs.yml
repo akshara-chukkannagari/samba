@@ -1,0 +1,57 @@
+cs:
+  refinery:
+    plugins:
+      accomodation_types:
+        title: Accomodation Types
+      accomodations:
+        title: Accomodations
+    accomodations:
+      admin:
+        accomodation_types:
+          actions:
+            create_new: Přidat Accomodation Type
+            reorder: Řadit Accomodation Types
+            reorder_done: Konec řazení Accomodation Types
+          records:
+            title: Accomodation Types
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Accomodation Types. Zvolte
+              "Přidat Accomodation Type" pro přidání prvního accomodation type.
+          accomodation_type:
+            view_live_html: Zobrazit náhled accomodation type<br/><em>(otevře se v
+              novém okně)</em>
+            edit: Upravit accomodation type
+            delete: Smazat accomodation type
+        accomodations:
+          actions:
+            create_new: Přidat Accomodation
+            reorder: Řadit Accomodations
+            reorder_done: Konec řazení Accomodations
+          records:
+            title: Accomodations
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Accomodations. Zvolte "Přidat
+              Accomodation" pro přidání prvního accomodation.
+          accomodation:
+            view_live_html: Zobrazit náhled accomodation<br/><em>(otevře se v novém
+              okně)</em>
+            edit: Upravit accomodation
+            delete: Smazat accomodation
+      accomodation_types:
+        show:
+          other: Další Accomodation Types
+      accomodations:
+        show:
+          other: Další Accomodations
+  activerecord:
+    attributes:
+      refinery/accomodations/accomodation_type:
+        name: Name
+      refinery/accomodations/accomodation:
+        name: Name
+        details: Details
+        teaser_image: Teaser Image
+        phone_number: Phone Number
+        email: Email
+        url: Url
+        user_id: User

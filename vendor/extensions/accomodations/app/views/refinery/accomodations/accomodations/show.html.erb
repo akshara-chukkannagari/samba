@@ -1,0 +1,63 @@
+<% content_for :body_content_title do %>
+  <%= @accomodation.name %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Name</h1>
+    <p>
+      <%=raw @accomodation.name %>
+    </p>
+  </section>
+  <section>
+    <h1>Details</h1>
+    <p>
+      <%=raw @accomodation.details %>
+    </p>
+  </section>
+  <section>
+    <h1>Teaser Image</h1>
+    <p>
+      <%= image_fu @accomodation.teaser_image, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Phone Number</h1>
+    <p>
+      <%=raw @accomodation.phone_number %>
+    </p>
+  </section>
+  <section>
+    <h1>Email</h1>
+    <p>
+      <%=raw @accomodation.email %>
+    </p>
+  </section>
+  <section>
+    <h1>Url</h1>
+    <p>
+      <%=raw @accomodation.url %>
+    </p>
+  </section>
+  <section>
+    <h1>User</h1>
+    <p>
+      <%=raw @accomodation.user_id %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="accomodations">
+      <% @accomodations.each do |accomodation| %>
+        <li>
+          <%= link_to accomodation.name, refinery.accomodations_accomodation_path(accomodation) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

@@ -1,0 +1,57 @@
+sk:
+  refinery:
+    plugins:
+      accomodation_types:
+        title: Accomodation Types
+      accomodations:
+        title: Accomodations
+    accomodations:
+      admin:
+        accomodation_types:
+          actions:
+            create_new: Pridať Accomodation Type
+            reorder: Preusporiadať Accomodation Types
+            reorder_done: Koniec radenia Accomodation Types
+          records:
+            title: Accomodation Types
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Accomodation Types. Kliknite na
+              "Pridať Accomodation Type" pre pridanie prvého accomodation type.
+          accomodation_type:
+            view_live_html: Zobraziť náhľad accomodation type<br/><em>(otvorí sa v
+              novom okne)</em>
+            edit: Upraviť accomodation type
+            delete: Zmazať accomodation type
+        accomodations:
+          actions:
+            create_new: Pridať Accomodation
+            reorder: Preusporiadať Accomodations
+            reorder_done: Koniec radenia Accomodations
+          records:
+            title: Accomodations
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Accomodations. Kliknite na "Pridať
+              Accomodation" pre pridanie prvého accomodation.
+          accomodation:
+            view_live_html: Zobraziť náhľad accomodation<br/><em>(otvorí sa v novom
+              okne)</em>
+            edit: Upraviť accomodation
+            delete: Zmazať accomodation
+      accomodation_types:
+        show:
+          other: Daľšie Accomodation Types
+      accomodations:
+        show:
+          other: Daľšie Accomodations
+  activerecord:
+    attributes:
+      refinery/accomodations/accomodation_type:
+        name: Name
+      refinery/accomodations/accomodation:
+        name: Name
+        details: Details
+        teaser_image: Teaser Image
+        phone_number: Phone Number
+        email: Email
+        url: Url
+        user_id: User

@@ -1,0 +1,57 @@
+it:
+  refinery:
+    plugins:
+      accomodation_types:
+        title: Accomodation Types
+      accomodations:
+        title: Accomodations
+    accomodations:
+      admin:
+        accomodation_types:
+          actions:
+            create_new: Aggiungi Nuovo Accomodation Type
+            reorder: Riordina Accomodation Types
+            reorder_done: Termina il Riordino di Accomodation Types
+          records:
+            title: Accomodation Types
+            sorry_no_results: Spiacenti! Nessun risultato trovato
+            no_items_yet: Non ci sono ancora Accomodation Types. Clicca "Aggiungi
+              Nuovo Accomodation Type" per aggiungere il tuo primo accomodation type.
+          accomodation_type:
+            view_live_html: Guarda live questo accomodation type <br/><em>(apre una
+              nuova finestra)</em>
+            edit: Modifica questo accomodation type
+            delete: Rimuovi per sempre questo accomodation type
+        accomodations:
+          actions:
+            create_new: Aggiungi Nuovo Accomodation
+            reorder: Riordina Accomodations
+            reorder_done: Termina il Riordino di Accomodations
+          records:
+            title: Accomodations
+            sorry_no_results: Spiacenti! Nessun risultato trovato
+            no_items_yet: Non ci sono ancora Accomodations. Clicca "Aggiungi Nuovo
+              Accomodation" per aggiungere il tuo primo accomodation.
+          accomodation:
+            view_live_html: Guarda live questo accomodation <br/><em>(apre una nuova
+              finestra)</em>
+            edit: Modifica questo accomodation
+            delete: Rimuovi per sempre questo accomodation
+      accomodation_types:
+        show:
+          other: Altri Accomodation Types
+      accomodations:
+        show:
+          other: Altri Accomodations
+  activerecord:
+    attributes:
+      refinery/accomodations/accomodation_type:
+        name: Name
+      refinery/accomodations/accomodation:
+        name: Name
+        details: Details
+        teaser_image: Teaser Image
+        phone_number: Phone Number
+        email: Email
+        url: Url
+        user_id: User

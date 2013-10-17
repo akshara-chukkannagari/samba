@@ -1,0 +1,57 @@
+es:
+  refinery:
+    plugins:
+      accomodation_types:
+        title: Accomodation Types
+      accomodations:
+        title: Accomodations
+    accomodations:
+      admin:
+        accomodation_types:
+          actions:
+            create_new: Crear nuevo accomodation type
+            reorder: Reordenar accomodation types
+            reorder_done: Reordenación de accomodation types completada
+          records:
+            title: Accomodation Types
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay accomodation types todavía. Pulsa en "Crear nuevo
+              Accomodation Type" para crear tu primer accomodation type.
+          accomodation_type:
+            view_live_html: Ver este accomodation type como abierto al público <br/><em>(abre
+              en ventana nueva)</em>
+            edit: Editar este accomodation type
+            delete: Borrar este accomodation type para siempre
+        accomodations:
+          actions:
+            create_new: Crear nuevo accomodation
+            reorder: Reordenar accomodations
+            reorder_done: Reordenación de accomodations completada
+          records:
+            title: Accomodations
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay accomodations todavía. Pulsa en "Crear nuevo Accomodation"
+              para crear tu primer accomodation.
+          accomodation:
+            view_live_html: Ver este accomodation como abierto al público <br/><em>(abre
+              en ventana nueva)</em>
+            edit: Editar este accomodation
+            delete: Borrar este accomodation para siempre
+      accomodation_types:
+        show:
+          other: Otros accomodation types
+      accomodations:
+        show:
+          other: Otros accomodations
+  activerecord:
+    attributes:
+      refinery/accomodations/accomodation_type:
+        name: Name
+      refinery/accomodations/accomodation:
+        name: Name
+        details: Details
+        teaser_image: Teaser Image
+        phone_number: Phone Number
+        email: Email
+        url: Url
+        user_id: User

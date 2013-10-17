@@ -1,0 +1,57 @@
+nl:
+  refinery:
+    plugins:
+      accomodation_types:
+        title: Accomodation Types
+      accomodations:
+        title: Accomodations
+    accomodations:
+      admin:
+        accomodation_types:
+          actions:
+            create_new: Nieuwe Accomodation Type toevoegen
+            reorder: De volgorde van de Accomodation Types wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Accomodation Type-volgorde
+          records:
+            title: Accomodation Types
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Accomodation Types. Druk op 'Nieuwe Accomodation
+              Type toevoegen' om de eerste toe te voegen.
+          accomodation_type:
+            view_live_html: Deze accomodation type op de website bekijken <br/><em>(opent
+              in een nieuw venster)</em>
+            edit: Bewerk deze accomodation type
+            delete: Deze accomodation type definitief verwijderen
+        accomodations:
+          actions:
+            create_new: Nieuwe Accomodation toevoegen
+            reorder: De volgorde van de Accomodations wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Accomodation-volgorde
+          records:
+            title: Accomodations
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Accomodations. Druk op 'Nieuwe Accomodation
+              toevoegen' om de eerste toe te voegen.
+          accomodation:
+            view_live_html: Deze accomodation op de website bekijken <br/><em>(opent
+              in een nieuw venster)</em>
+            edit: Bewerk deze accomodation
+            delete: Deze accomodation definitief verwijderen
+      accomodation_types:
+        show:
+          other: Andere Accomodation Types
+      accomodations:
+        show:
+          other: Andere Accomodations
+  activerecord:
+    attributes:
+      refinery/accomodations/accomodation_type:
+        name: Name
+      refinery/accomodations/accomodation:
+        name: Name
+        details: Details
+        teaser_image: Teaser Image
+        phone_number: Phone Number
+        email: Email
+        url: Url
+        user_id: User
