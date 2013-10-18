@@ -6,7 +6,7 @@ module Refinery
       attr_accessible :name, :details, :teaser_image_id, :phone_number, :email, :url, :user_id, :available_from,:available_till, :sold_out, :position, :accomodation_type_id
       attr_accessible :address_attributes
 
-      validates :name, :presence => true, :uniqueness => true
+      validates :name, :details,:phone_number, :email, :presence => true
 
       belongs_to :teaser_image, :class_name => '::Refinery::Image'
       belongs_to :accomodation_type
