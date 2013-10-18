@@ -20,7 +20,7 @@ Refinery::Core.configure do |config|
   # config.base_cache_key = :refinery
 
   # Site name
-  # config.site_name = "Company Name"
+  config.site_name = "Gulguling "
 
   # This activates Google Analytics tracking within your website. If this
   # config is left blank or set to UA-xxxxxx-x then no remote calls to
@@ -41,7 +41,7 @@ Refinery::Core.configure do |config|
   # config.register_javascript "prototype-rails"
 
   # Register extra stylesheet for backend (optional options)
-  # config.register_stylesheet "custom", :media => 'screen'
+  config.register_stylesheet "jquery-ui-1.10.3.custom", "bootstrap","bootstrap-theme", "application", :media => 'screen'
 
   # Specify a different backend path than the default of /refinery.
   # config.backend_route = "refinery"
