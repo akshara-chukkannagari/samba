@@ -19,6 +19,14 @@
 	:object => "accomodations/accomodation" -%>
 </div>
 
+<div class="field">
+	<h2>Availiable Dates</h2>
+	<%= f.label "from"%>
+	<%= f.date_select :available_from %>
+	
+	<%= f.label "till"%>
+	<%= f.date_select :available_till %>
+</div>
 
 <div class="field ">
 	<h2>
@@ -27,6 +35,9 @@
 	<%= f.fields_for :address do |address_fields| %>
 	<%= f.label :street %>
 	<%= address_fields.text_field :street %>
+	
+	<%= f.label :street_number %>
+	<%= address_fields.text_field :street_number %>
 	
 	<%= f.label :town %>
 	<%= address_fields.text_field :town%>
