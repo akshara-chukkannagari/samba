@@ -3,7 +3,7 @@ module Refinery
     class Accomodation < Refinery::Core::BaseModel
       self.table_name = 'refinery_accomodations'
 
-      attr_accessible :name, :details, :teaser_image_id, :phone_number, :email, :url, :user_id, :position, :accomodation_type_id
+      attr_accessible :name, :details, :teaser_image_id, :phone_number, :email, :url, :user_id, :available_from,:available_till, :sold_out, :position, :accomodation_type_id
       attr_accessible :address_attributes
 
       validates :name, :presence => true, :uniqueness => true

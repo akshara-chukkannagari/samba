@@ -2,12 +2,13 @@
 <html>
 	<head>
 		<title>Safari</title>
-		<%= stylesheet_link_tag    "samba", "bootstrap", "bootstrap-theme", :media => "all" %>
+		<%= stylesheet_link_tag    "jquery-ui-1.10.3.custom", "samba", "bootstrap", "bootstrap-theme", :media => "all" %>
 		<%= javascript_include_tag "jquery-1.9.1", "bootstrap", "carousel" %>
 		<%= csrf_meta_tags %>
 	</head>
 	<body>
 		<div class="container container-fluid">
+			<!-- header 
 			<div class="navbar navbar-default-top navbar-inverse " >
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 					<span class="icon-bar"></span>
@@ -29,9 +30,10 @@
 						</li>
 					</ul>
 
-				</div><!--/.nav-collapse -->
+				</div>
 			</div>
-			<div class="samba_content">
+			-->
+			<div>
 				<%= yield%>
 			</div>
 
