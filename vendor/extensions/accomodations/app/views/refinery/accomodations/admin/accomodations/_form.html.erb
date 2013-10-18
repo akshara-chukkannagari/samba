@@ -1,70 +1,97 @@
 <%= form_for [refinery, :accomodations_admin, @accomodation] do |f| -%>
-  <%= render '/refinery/admin/error_messages',
-              :object => @accomodation,
-              :include_object_name => true %>
+<%= render '/refinery/admin/error_messages',
+:object => @accomodation,
+:include_object_name => true %>
 
-  <div class='field'>
-    <%= f.label :name -%>
-    <%= f.text_field :name, :class => 'larger widest' -%>
-  </div>
-  
-  <div class="field">
-  	<%=f.label :accomodation_type -%>
-  	<%= f.select(:accomodation_type_id,@accomodation_types.collect{|d| [d.name, d.id]})%>
-  </div>
-  <div class='field'>
-    <%= render '/refinery/admin/wysiwyg',
-                :f => f,
-                :fields => [:details],
-                :object => "accomodations/accomodation" -%>
-  </div>
+<div class='field'>
+	<%= f.label :name -%>
+	<%= f.text_field :name, :class => 'larger widest' -%>
+</div>
 
-  <h2>address for <%=@accomodation.address.inspect %></h2>
-  <div class="field">
-  	<%= f.fields_for :address do |address_fields| %>
-  	  <%=address_fields.text_field :street %>
-  	<%end%>
-  </div>
-  
-  <div class='field'>
-    <%= f.label :teaser_image -%>
-    <%= render '/refinery/admin/image_picker',
-               :f => f,
-               :field => :teaser_image_id,
-               :image => @accomodation.teaser_image,
-               :toggle_image_display => false -%>
-  </div>
+<div class="field">
+	<%= f.label :accomodation_type -%>
+	<%= f.select(:accomodation_type_id,@accomodation_types.collect{|d| [d.name, d.id]})%>
+</div>
+<div class='field'>
+	<%= render '/refinery/admin/wysiwyg',
+	:f => f,
+	:fields => [:details],
+	:object => "accomodations/accomodation" -%>
+</div>
 
-  <div class='field'>
-    <%= f.label :phone_number -%>
-    <%= f.text_field :phone_number -%>
-  </div>
 
-  <div class='field'>
-    <%= f.label :email -%>
-    <%= f.text_field :email -%>
-  </div>
+<div class="field ">
+	<h2>
+		Address 
+	</h2>
+	<%= f.fields_for :address do |address_fields| %>
+	<%= f.label :street %>
+	<%= address_fields.text_field :street %>
+	
+	<%= f.label :town %>
+	<%= address_fields.text_field :town%>
+	
+	<%= f.label :district %>
+	<%= address_fields.text_field :district%>
+	
+	<%= f.label :state %>
+	<%= address_fields.text_field :state%>
+	
+	<%= f.label :country %>
+	<%= address_fields.text_field :country%>
+	<div>
+		<%= f.label :lat %>
+		<%= address_fields.text_field :lat%>
+		
+		<%= f.label :lng %>
+		<%= address_fields.text_field :lng%>
+		
+		<%= f.label :alt %>
+		<%= address_fields.text_field :alt%>
+	</div>
 
-  <div class='field'>
-    <%= f.label :url -%>
-    <%= f.text_field :url -%>
-  </div>
+	<%end%>
+</div>
 
-  <div class='field'>
-    <%= f.label :user_id -%>
-    <%= f.number_field :user_id -%>
-  </div>
+<div class='field'>
+	<%= f.label :teaser_image -%>
+	<%= render '/refinery/admin/image_picker',
+	:f => f,
+	:field => :teaser_image_id,
+	:image => @accomodation.teaser_image,
+	:toggle_image_display => false -%>
+</div>
 
-  <%= render '/refinery/admin/form_actions', :f => f,
-             :continue_editing => false,
-             :delete_title => t('delete', :scope => 'refinery.accomodations.admin.accomodations.accomodation'),
-             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @accomodation.name) -%>
+<div class='field'>
+	<%= f.label :phone_number -%>
+	<%= f.text_field :phone_number -%>
+</div>
+
+<div class='field'>
+	<%= f.label :email -%>
+	<%= f.text_field :email -%>
+</div>
+
+<div class='field'>
+	<%= f.label :url -%>
+	<%= f.text_field :url -%>
+</div>
+
+<div class='field'>
+	<%= f.label :user_id -%>
+	<%= f.number_field :user_id -%>
+</div>
+
+<%= render '/refinery/admin/form_actions', :f => f,
+:continue_editing => false,
+:delete_title => t('delete', :scope => 'refinery.accomodations.admin.accomodations.accomodation'),
+:delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @accomodation.name) -%>
 <% end -%>
 
 <% content_for :javascripts do -%>
-  <script>
-    $(document).ready(function(){
-      page_options.init(false, '', '');
-    });
-  </script>
+<script>
+	$(document).ready(function() {
+		page_options.init(false, '', '');
+	}); 
+</script>
 <% end -%>
