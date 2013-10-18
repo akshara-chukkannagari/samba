@@ -1,12 +1,29 @@
 tr:
   refinery:
     plugins:
+      addresses:
+        title: Addresses
       accomodation_types:
         title: Accomodation Types
       accomodations:
         title: Accomodations
     accomodations:
       admin:
+        addresses:
+          actions:
+            create_new: Yeni Ekle Address
+            reorder: Tekrar sirala Addresses
+            reorder_done: Tekrar siralama tamamlandiAddresses
+          records:
+            title: Addresses
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Addresses yok henuz.  Tikla "Yeni Ekle Address"
+              eklemek senin ilk address.
+          address:
+            view_live_html: Bunu canlu address goruntule <br/><em>(yeni bir pencerede
+              acar)</em>
+            edit: Bunu Duzenle address
+            delete: Bunu Sil address sonsuza dek
         accomodation_types:
           actions:
             create_new: Yeni Ekle Accomodation Type
@@ -37,6 +54,9 @@ tr:
               acar)</em>
             edit: Bunu Duzenle accomodation
             delete: Bunu Sil accomodation sonsuza dek
+      addresses:
+        show:
+          other: Diger Addresses
       accomodation_types:
         show:
           other: Diger Accomodation Types
@@ -45,6 +65,16 @@ tr:
           other: Diger Accomodations
   activerecord:
     attributes:
+      refinery/accomodations/address:
+        street: Street
+        town: Town
+        district: District
+        state: State
+        country: Country
+        lat: Lat
+        lng: Lng
+        alt: Alt
+        accomodation_id: Accomodation
       refinery/accomodations/accomodation_type:
         name: Name
       refinery/accomodations/accomodation:

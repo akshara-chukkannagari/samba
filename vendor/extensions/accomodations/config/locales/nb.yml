@@ -1,12 +1,29 @@
 nb:
   refinery:
     plugins:
+      addresses:
+        title: Addresses
       accomodation_types:
         title: Accomodation Types
       accomodations:
         title: Accomodations
     accomodations:
       admin:
+        addresses:
+          actions:
+            create_new: Lag en ny Address
+            reorder: Endre rekkefølgen på Addresses
+            reorder_done: Ferdig å endre rekkefølgen Addresses
+          records:
+            title: Addresses
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Addresses enda. Klikk på "Lag en ny Address"
+              for å legge til din første address.
+          address:
+            view_live_html: Vis hvordan denne address ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne address
+            delete: Fjern denne address permanent
         accomodation_types:
           actions:
             create_new: Lag en ny Accomodation Type
@@ -37,6 +54,9 @@ nb:
               i et nytt vindu)</em>
             edit: Rediger denne accomodation
             delete: Fjern denne accomodation permanent
+      addresses:
+        show:
+          other: Andre Addresses
       accomodation_types:
         show:
           other: Andre Accomodation Types
@@ -45,6 +65,16 @@ nb:
           other: Andre Accomodations
   activerecord:
     attributes:
+      refinery/accomodations/address:
+        street: Street
+        town: Town
+        district: District
+        state: State
+        country: Country
+        lat: Lat
+        lng: Lng
+        alt: Alt
+        accomodation_id: Accomodation
       refinery/accomodations/accomodation_type:
         name: Name
       refinery/accomodations/accomodation:

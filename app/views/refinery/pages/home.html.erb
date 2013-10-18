@@ -25,10 +25,11 @@
 		</div>
 		
 		<div class="col-md-4">
-			<%@snippets.each do |snippet|%>
+			<%@accomodations.each do |accomodation|%>
 			<div class="well well-sm snippet_div">
-				<p> <%= snippet.name%> </p>
-				<a href="<%= snippet.url%>" class="btn btn-success btn-xs">visit</a>
+				<p> <%= accomodation.name%> </p>
+				<p class="label label-info"><%= accomodation.address.street %></p>
+				<a href="<%= accomodation.url%>" class="btn btn-success btn-xs">visit</a>
 			</div>
 			
 			<%end%>

@@ -1,12 +1,28 @@
 fr:
   refinery:
     plugins:
+      addresses:
+        title: Addresses
       accomodation_types:
         title: Accomodation Types
       accomodations:
         title: Accomodations
     accomodations:
       admin:
+        addresses:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Address
+            reorder: Réordonner les Addresses
+            reorder_done: Fin de réordonnancement des Addresses
+          records:
+            title: Addresses
+            sorry_no_results: Désolé ! Aucun résultat.
+            no_items_yet: Il n'y a actuellement aucun(e) Address. Cliquer sur "Créer
+              un(e) nouve(au/l/lle) Address" pour créer votre premi(er/ère) address.
+          address:
+            view_live_html: Voir ce(t/tte) address <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) address
+            delete: Supprimer définitivement ce(t/tte) address
         accomodation_types:
           actions:
             create_new: Créer un(e) nouve(au/l/lle) Accomodation Type
@@ -39,6 +55,9 @@ fr:
               fenêtre)</em>
             edit: Modifier ce(t/tte) accomodation
             delete: Supprimer définitivement ce(t/tte) accomodation
+      addresses:
+        show:
+          other: Autres Addresses
       accomodation_types:
         show:
           other: Autres Accomodation Types
@@ -47,6 +66,16 @@ fr:
           other: Autres Accomodations
   activerecord:
     attributes:
+      refinery/accomodations/address:
+        street: Street
+        town: Town
+        district: District
+        state: State
+        country: Country
+        lat: Lat
+        lng: Lng
+        alt: Alt
+        accomodation_id: Accomodation
       refinery/accomodations/accomodation_type:
         name: Name
       refinery/accomodations/accomodation:

@@ -1,12 +1,29 @@
 es:
   refinery:
     plugins:
+      addresses:
+        title: Addresses
       accomodation_types:
         title: Accomodation Types
       accomodations:
         title: Accomodations
     accomodations:
       admin:
+        addresses:
+          actions:
+            create_new: Crear nuevo address
+            reorder: Reordenar addresses
+            reorder_done: Reordenación de addresses completada
+          records:
+            title: Addresses
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay addresses todavía. Pulsa en "Crear nuevo Address"
+              para crear tu primer address.
+          address:
+            view_live_html: Ver este address como abierto al público <br/><em>(abre
+              en ventana nueva)</em>
+            edit: Editar este address
+            delete: Borrar este address para siempre
         accomodation_types:
           actions:
             create_new: Crear nuevo accomodation type
@@ -37,6 +54,9 @@ es:
               en ventana nueva)</em>
             edit: Editar este accomodation
             delete: Borrar este accomodation para siempre
+      addresses:
+        show:
+          other: Otros addresses
       accomodation_types:
         show:
           other: Otros accomodation types
@@ -45,6 +65,16 @@ es:
           other: Otros accomodations
   activerecord:
     attributes:
+      refinery/accomodations/address:
+        street: Street
+        town: Town
+        district: District
+        state: State
+        country: Country
+        lat: Lat
+        lng: Lng
+        alt: Alt
+        accomodation_id: Accomodation
       refinery/accomodations/accomodation_type:
         name: Name
       refinery/accomodations/accomodation:

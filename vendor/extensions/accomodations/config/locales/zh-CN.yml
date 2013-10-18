@@ -1,12 +1,27 @@
 zh-CN:
   refinery:
     plugins:
+      addresses:
+        title: Addresses
       accomodation_types:
         title: Accomodation Types
       accomodations:
         title: Accomodations
     accomodations:
       admin:
+        addresses:
+          actions:
+            create_new: 建立新的 Address
+            reorder: 对 Addresses 重新排序
+            reorder_done: 对 Addresses 的重新排序结束
+          records:
+            title: Addresses
+            sorry_no_results: 对不起，未找到结果。
+            no_items_yet: 目前没有 Addresses . 点击 "Add New Address" 创建一个address.
+          address:
+            view_live_html: 查看 address 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 address
+            delete: 永久删除 address
         accomodation_types:
           actions:
             create_new: 建立新的 Accomodation Type
@@ -34,6 +49,9 @@ zh-CN:
             view_live_html: 查看 accomodation 的最新内容.<br/><em>(新窗口中打开)</em>
             edit: 编辑 accomodation
             delete: 永久删除 accomodation
+      addresses:
+        show:
+          other: 其他 Addresses
       accomodation_types:
         show:
           other: 其他 Accomodation Types
@@ -42,6 +60,16 @@ zh-CN:
           other: 其他 Accomodations
   activerecord:
     attributes:
+      refinery/accomodations/address:
+        street: Street
+        town: Town
+        district: District
+        state: State
+        country: Country
+        lat: Lat
+        lng: Lng
+        alt: Alt
+        accomodation_id: Accomodation
       refinery/accomodations/accomodation_type:
         name: Name
       refinery/accomodations/accomodation:

@@ -4,6 +4,6 @@ Refinery::PagesController.class_eval do
   
   protected 
   def find_all_snippets
-    @snippets = Refinery::Accomodations::Accomodation.all
+    @accomodations = Refinery::Accomodations::Accomodation.all
   end
 end

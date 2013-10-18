@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131017120625) do
+ActiveRecord::Schema.define(:version => 20131018090123) do
 
   create_table "refinery_accomodations", :force => true do |t|
     t.string   "name"
@@ -32,6 +32,21 @@ ActiveRecord::Schema.define(:version => 20131017120625) do
     t.integer  "position"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "refinery_accomodations_addresses", :force => true do |t|
+    t.string   "street"
+    t.string   "town"
+    t.string   "district"
+    t.string   "state"
+    t.string   "country"
+    t.float    "lat"
+    t.float    "lng"
+    t.float    "alt"
+    t.integer  "accomodation_id"
+    t.integer  "position"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
   create_table "refinery_image_page_translations", :force => true do |t|

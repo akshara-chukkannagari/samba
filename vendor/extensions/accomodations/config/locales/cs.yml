@@ -1,12 +1,28 @@
 cs:
   refinery:
     plugins:
+      addresses:
+        title: Addresses
       accomodation_types:
         title: Accomodation Types
       accomodations:
         title: Accomodations
     accomodations:
       admin:
+        addresses:
+          actions:
+            create_new: Přidat Address
+            reorder: Řadit Addresses
+            reorder_done: Konec řazení Addresses
+          records:
+            title: Addresses
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Addresses. Zvolte "Přidat Address"
+              pro přidání prvního address.
+          address:
+            view_live_html: Zobrazit náhled address<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit address
+            delete: Smazat address
         accomodation_types:
           actions:
             create_new: Přidat Accomodation Type
@@ -37,6 +53,9 @@ cs:
               okně)</em>
             edit: Upravit accomodation
             delete: Smazat accomodation
+      addresses:
+        show:
+          other: Další Addresses
       accomodation_types:
         show:
           other: Další Accomodation Types
@@ -45,6 +64,16 @@ cs:
           other: Další Accomodations
   activerecord:
     attributes:
+      refinery/accomodations/address:
+        street: Street
+        town: Town
+        district: District
+        state: State
+        country: Country
+        lat: Lat
+        lng: Lng
+        alt: Alt
+        accomodation_id: Accomodation
       refinery/accomodations/accomodation_type:
         name: Name
       refinery/accomodations/accomodation:

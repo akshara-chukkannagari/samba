@@ -1,12 +1,29 @@
 nl:
   refinery:
     plugins:
+      addresses:
+        title: Addresses
       accomodation_types:
         title: Accomodation Types
       accomodations:
         title: Accomodations
     accomodations:
       admin:
+        addresses:
+          actions:
+            create_new: Nieuwe Address toevoegen
+            reorder: De volgorde van de Addresses wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Address-volgorde
+          records:
+            title: Addresses
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Addresses. Druk op 'Nieuwe Address toevoegen'
+              om de eerste toe te voegen.
+          address:
+            view_live_html: Deze address op de website bekijken <br/><em>(opent in
+              een nieuw venster)</em>
+            edit: Bewerk deze address
+            delete: Deze address definitief verwijderen
         accomodation_types:
           actions:
             create_new: Nieuwe Accomodation Type toevoegen
@@ -37,6 +54,9 @@ nl:
               in een nieuw venster)</em>
             edit: Bewerk deze accomodation
             delete: Deze accomodation definitief verwijderen
+      addresses:
+        show:
+          other: Andere Addresses
       accomodation_types:
         show:
           other: Andere Accomodation Types
@@ -45,6 +65,16 @@ nl:
           other: Andere Accomodations
   activerecord:
     attributes:
+      refinery/accomodations/address:
+        street: Street
+        town: Town
+        district: District
+        state: State
+        country: Country
+        lat: Lat
+        lng: Lng
+        alt: Alt
+        accomodation_id: Accomodation
       refinery/accomodations/accomodation_type:
         name: Name
       refinery/accomodations/accomodation:

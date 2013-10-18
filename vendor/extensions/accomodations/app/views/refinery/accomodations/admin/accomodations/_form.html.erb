@@ -19,6 +19,13 @@
                 :object => "accomodations/accomodation" -%>
   </div>
 
+  <h2>address for <%=@accomodation.address.inspect %></h2>
+  <div class="field">
+  	<%= f.fields_for :address do |address_fields| %>
+  	  <%=address_fields.text_field :street %>
+  	<%end%>
+  </div>
+  
   <div class='field'>
     <%= f.label :teaser_image -%>
     <%= render '/refinery/admin/image_picker',
