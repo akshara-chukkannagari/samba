@@ -17,3 +17,9 @@
 	width: 400px;
 	height: 250px;
 }
+
+
+.space_left_right {
+	margin-right: 1%;
+	height: 10%;
+}

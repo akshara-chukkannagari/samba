@@ -1,7 +1,9 @@
 PATH
   remote: vendor/extensions
   specs:
-    refinerycms-hotels (1.0)
+    refinerycms-accomodation_types (1.0)
+      refinerycms-core (~> 2.1.0)
+    refinerycms-accomodations (1.0)
       refinerycms-core (~> 2.1.0)
     refinerycms-snippets (1.0)
       refinerycms-core (~> 2.1.0)
@@ -197,8 +199,9 @@ DEPENDENCIES
   mysql2
   rails (= 3.2.14)
   refinerycms
+  refinerycms-accomodation_types!
+  refinerycms-accomodations!
   refinerycms-acts-as-indexed (~> 1.0.0)
-  refinerycms-hotels!
   refinerycms-page-images (~> 2.1.0)
   refinerycms-snippets!
   sass-rails (~> 3.2.3)

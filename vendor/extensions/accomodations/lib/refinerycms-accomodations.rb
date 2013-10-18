@@ -1,0 +1,6 @@
+require 'refinery/accomodations'
+require 'refinery/accomodation_types'
+require 'refinery/addresses'
+require 'refinery/addresses'
+require 'refinery/addresses'
+require 'refinery/prices'

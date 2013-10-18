@@ -1,0 +1,112 @@
+nb:
+  refinery:
+    plugins:
+      prices:
+        title: Prices
+      addresses:
+        title: Addresses
+      accomodation_types:
+        title: Accomodation Types
+      accomodations:
+        title: Accomodations
+    accomodations:
+      admin:
+        prices:
+          actions:
+            create_new: Lag en ny Price
+            reorder: Endre rekkefølgen på Prices
+            reorder_done: Ferdig å endre rekkefølgen Prices
+          records:
+            title: Prices
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Prices enda. Klikk på "Lag en ny Price" for
+              å legge til din første price.
+          price:
+            view_live_html: Vis hvordan denne price ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne price
+            delete: Fjern denne price permanent
+        addresses:
+          actions:
+            create_new: Lag en ny Address
+            reorder: Endre rekkefølgen på Addresses
+            reorder_done: Ferdig å endre rekkefølgen Addresses
+          records:
+            title: Addresses
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Addresses enda. Klikk på "Lag en ny Address"
+              for å legge til din første address.
+          address:
+            view_live_html: Vis hvordan denne address ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne address
+            delete: Fjern denne address permanent
+        accomodation_types:
+          actions:
+            create_new: Lag en ny Accomodation Type
+            reorder: Endre rekkefølgen på Accomodation Types
+            reorder_done: Ferdig å endre rekkefølgen Accomodation Types
+          records:
+            title: Accomodation Types
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Accomodation Types enda. Klikk på "Lag en ny
+              Accomodation Type" for å legge til din første accomodation type.
+          accomodation_type:
+            view_live_html: Vis hvordan denne accomodation type ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne accomodation type
+            delete: Fjern denne accomodation type permanent
+        accomodations:
+          actions:
+            create_new: Lag en ny Accomodation
+            reorder: Endre rekkefølgen på Accomodations
+            reorder_done: Ferdig å endre rekkefølgen Accomodations
+          records:
+            title: Accomodations
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Accomodations enda. Klikk på "Lag en ny Accomodation"
+              for å legge til din første accomodation.
+          accomodation:
+            view_live_html: Vis hvordan denne accomodation ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne accomodation
+            delete: Fjern denne accomodation permanent
+      prices:
+        show:
+          other: Andre Prices
+      addresses:
+        show:
+          other: Andre Addresses
+      accomodation_types:
+        show:
+          other: Andre Accomodation Types
+      accomodations:
+        show:
+          other: Andre Accomodations
+  activerecord:
+    attributes:
+      refinery/accomodations/price:
+        original: Original
+        after_discount: After Discount
+        distribution: Distribution
+        accomodation_id: Accomodation
+      refinery/accomodations/address:
+        street: Street
+        town: Town
+        district: District
+        state: State
+        country: Country
+        lat: Lat
+        lng: Lng
+        alt: Alt
+        accomodation_id: Accomodation
+      refinery/accomodations/accomodation_type:
+        name: Name
+      refinery/accomodations/accomodation:
+        name: Name
+        details: Details
+        teaser_image: Teaser Image
+        phone_number: Phone Number
+        email: Email
+        url: Url
+        user_id: User

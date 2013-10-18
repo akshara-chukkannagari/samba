@@ -1,0 +1,112 @@
+fr:
+  refinery:
+    plugins:
+      prices:
+        title: Prices
+      addresses:
+        title: Addresses
+      accomodation_types:
+        title: Accomodation Types
+      accomodations:
+        title: Accomodations
+    accomodations:
+      admin:
+        prices:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Price
+            reorder: Réordonner les Prices
+            reorder_done: Fin de réordonnancement des Prices
+          records:
+            title: Prices
+            sorry_no_results: Désolé ! Aucun résultat.
+            no_items_yet: Il n'y a actuellement aucun(e) Price. Cliquer sur "Créer
+              un(e) nouve(au/l/lle) Price" pour créer votre premi(er/ère) price.
+          price:
+            view_live_html: Voir ce(t/tte) price <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) price
+            delete: Supprimer définitivement ce(t/tte) price
+        addresses:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Address
+            reorder: Réordonner les Addresses
+            reorder_done: Fin de réordonnancement des Addresses
+          records:
+            title: Addresses
+            sorry_no_results: Désolé ! Aucun résultat.
+            no_items_yet: Il n'y a actuellement aucun(e) Address. Cliquer sur "Créer
+              un(e) nouve(au/l/lle) Address" pour créer votre premi(er/ère) address.
+          address:
+            view_live_html: Voir ce(t/tte) address <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) address
+            delete: Supprimer définitivement ce(t/tte) address
+        accomodation_types:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Accomodation Type
+            reorder: Réordonner les Accomodation Types
+            reorder_done: Fin de réordonnancement des Accomodation Types
+          records:
+            title: Accomodation Types
+            sorry_no_results: Désolé ! Aucun résultat.
+            no_items_yet: Il n'y a actuellement aucun(e) Accomodation Type. Cliquer
+              sur "Créer un(e) nouve(au/l/lle) Accomodation Type" pour créer votre
+              premi(er/ère) accomodation type.
+          accomodation_type:
+            view_live_html: Voir ce(t/tte) accomodation type <br/><em>(Ouvre une nouvelle
+              fenêtre)</em>
+            edit: Modifier ce(t/tte) accomodation type
+            delete: Supprimer définitivement ce(t/tte) accomodation type
+        accomodations:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Accomodation
+            reorder: Réordonner les Accomodations
+            reorder_done: Fin de réordonnancement des Accomodations
+          records:
+            title: Accomodations
+            sorry_no_results: Désolé ! Aucun résultat.
+            no_items_yet: Il n'y a actuellement aucun(e) Accomodation. Cliquer sur
+              "Créer un(e) nouve(au/l/lle) Accomodation" pour créer votre premi(er/ère)
+              accomodation.
+          accomodation:
+            view_live_html: Voir ce(t/tte) accomodation <br/><em>(Ouvre une nouvelle
+              fenêtre)</em>
+            edit: Modifier ce(t/tte) accomodation
+            delete: Supprimer définitivement ce(t/tte) accomodation
+      prices:
+        show:
+          other: Autres Prices
+      addresses:
+        show:
+          other: Autres Addresses
+      accomodation_types:
+        show:
+          other: Autres Accomodation Types
+      accomodations:
+        show:
+          other: Autres Accomodations
+  activerecord:
+    attributes:
+      refinery/accomodations/price:
+        original: Original
+        after_discount: After Discount
+        distribution: Distribution
+        accomodation_id: Accomodation
+      refinery/accomodations/address:
+        street: Street
+        town: Town
+        district: District
+        state: State
+        country: Country
+        lat: Lat
+        lng: Lng
+        alt: Alt
+        accomodation_id: Accomodation
+      refinery/accomodations/accomodation_type:
+        name: Name
+      refinery/accomodations/accomodation:
+        name: Name
+        details: Details
+        teaser_image: Teaser Image
+        phone_number: Phone Number
+        email: Email
+        url: Url
+        user_id: User

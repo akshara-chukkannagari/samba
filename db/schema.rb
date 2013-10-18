@@ -11,26 +11,57 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131016183730) do
+ActiveRecord::Schema.define(:version => 20131018132129) do
 
-  create_table "refinery_hotels", :force => true do |t|
+  create_table "refinery_accomodations", :force => true do |t|
     t.string   "name"
-    t.string   "description"
+    t.text     "details"
+    t.integer  "teaser_image_id"
     t.string   "phone_number"
     t.string   "email"
     t.string   "url"
-    t.string   "address"
-    t.integer  "teaser_id"
+    t.integer  "user_id"
     t.integer  "position"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.datetime "created_at",           :null => false
+    t.datetime "updated_at",           :null => false
+    t.integer  "accomodation_type_id"
+    t.datetime "available_from"
+    t.datetime "available_till"
+    t.boolean  "sold_out"
   end
 
-  create_table "refinery_hotels_places", :force => true do |t|
+  create_table "refinery_accomodations_accomodation_types", :force => true do |t|
     t.string   "name"
     t.integer  "position"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "refinery_accomodations_addresses", :force => true do |t|
+    t.string   "street"
+    t.string   "town"
+    t.string   "district"
+    t.string   "state"
+    t.string   "country"
+    t.float    "lat"
+    t.float    "lng"
+    t.float    "alt"
+    t.integer  "accomodation_id"
+    t.integer  "position"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+    t.integer  "street_number"
+  end
+
+  create_table "refinery_accomodations_prices", :force => true do |t|
+    t.float    "original"
+    t.float    "after_discount"
+    t.string   "distribution"
+    t.integer  "accomodation_id"
+    t.integer  "position"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+    t.string   "currency"
   end
 
   create_table "refinery_image_page_translations", :force => true do |t|

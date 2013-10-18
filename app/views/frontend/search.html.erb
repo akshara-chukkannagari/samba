@@ -1,0 +1,35 @@
+<div class="panel panel-default">
+	<div class="panel-body">
+		<h2 class="notice"> //in development mode, coming soon </h2>
+		<a href="/" class="btn btn-primary btn-large">home</a>
+	</div>
+</div>
+<div class="jumbotron">
+	<div class="container">
+		<%@accomodations.each do |accomodation|%>
+
+		<div class="col-3 col-sm-2 col-lg-3 well well-sm space_left_right">
+
+			<h3> <%= accomodation.name%> </h3>
+			<h4>
+			<p class="label label-info ">
+				<%= accomodation.price.after_discount%>
+				
+				 <%= accomodation.price.currency%>
+			</p></h4>
+
+			<address>
+				<strong>
+					<%= accomodation.address.district%>
+				</strong>
+				<br />
+				<%= accomodation.address.street%>, <%= accomodation.address.street_number%>
+				<br />
+				<%= accomodation.address.state%>, <%= accomodation.address.country%>
+			</address>
+		</div>
+
+		<%end%>
+
+	</div>
+</div>
