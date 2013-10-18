@@ -1,0 +1,30 @@
+<%= form_for [refinery, :accomodations_admin, @price] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @price,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :original -%>
+    <%= f.text_field :original, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :after_discount -%>
+    <%= f.text_field :after_discount -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :distribution -%>
+    <%= f.text_field :distribution -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :accomodation_id -%>
+    <%= f.number_field :accomodation_id -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.prices.admin.prices.price'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @price.distribution) -%>
+<% end -%>

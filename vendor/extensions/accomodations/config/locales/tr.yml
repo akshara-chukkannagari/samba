@@ -1,6 +1,8 @@
 tr:
   refinery:
     plugins:
+      prices:
+        title: Prices
       addresses:
         title: Addresses
       accomodation_types:
@@ -9,6 +11,21 @@ tr:
         title: Accomodations
     accomodations:
       admin:
+        prices:
+          actions:
+            create_new: Yeni Ekle Price
+            reorder: Tekrar sirala Prices
+            reorder_done: Tekrar siralama tamamlandiPrices
+          records:
+            title: Prices
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Prices yok henuz.  Tikla "Yeni Ekle Price"
+              eklemek senin ilk price.
+          price:
+            view_live_html: Bunu canlu price goruntule <br/><em>(yeni bir pencerede
+              acar)</em>
+            edit: Bunu Duzenle price
+            delete: Bunu Sil price sonsuza dek
         addresses:
           actions:
             create_new: Yeni Ekle Address
@@ -54,6 +71,9 @@ tr:
               acar)</em>
             edit: Bunu Duzenle accomodation
             delete: Bunu Sil accomodation sonsuza dek
+      prices:
+        show:
+          other: Diger Prices
       addresses:
         show:
           other: Diger Addresses
@@ -65,6 +85,11 @@ tr:
           other: Diger Accomodations
   activerecord:
     attributes:
+      refinery/accomodations/price:
+        original: Original
+        after_discount: After Discount
+        distribution: Distribution
+        accomodation_id: Accomodation
       refinery/accomodations/address:
         street: Street
         town: Town

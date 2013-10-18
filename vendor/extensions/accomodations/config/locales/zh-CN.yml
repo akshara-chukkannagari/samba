@@ -1,6 +1,8 @@
 zh-CN:
   refinery:
     plugins:
+      prices:
+        title: Prices
       addresses:
         title: Addresses
       accomodation_types:
@@ -9,6 +11,19 @@ zh-CN:
         title: Accomodations
     accomodations:
       admin:
+        prices:
+          actions:
+            create_new: 建立新的 Price
+            reorder: 对 Prices 重新排序
+            reorder_done: 对 Prices 的重新排序结束
+          records:
+            title: Prices
+            sorry_no_results: 对不起，未找到结果。
+            no_items_yet: 目前没有 Prices . 点击 "Add New Price" 创建一个price.
+          price:
+            view_live_html: 查看 price 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 price
+            delete: 永久删除 price
         addresses:
           actions:
             create_new: 建立新的 Address
@@ -49,6 +64,9 @@ zh-CN:
             view_live_html: 查看 accomodation 的最新内容.<br/><em>(新窗口中打开)</em>
             edit: 编辑 accomodation
             delete: 永久删除 accomodation
+      prices:
+        show:
+          other: 其他 Prices
       addresses:
         show:
           other: 其他 Addresses
@@ -60,6 +78,11 @@ zh-CN:
           other: 其他 Accomodations
   activerecord:
     attributes:
+      refinery/accomodations/price:
+        original: Original
+        after_discount: After Discount
+        distribution: Distribution
+        accomodation_id: Accomodation
       refinery/accomodations/address:
         street: Street
         town: Town

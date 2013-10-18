@@ -1,6 +1,8 @@
 fr:
   refinery:
     plugins:
+      prices:
+        title: Prices
       addresses:
         title: Addresses
       accomodation_types:
@@ -9,6 +11,20 @@ fr:
         title: Accomodations
     accomodations:
       admin:
+        prices:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Price
+            reorder: Réordonner les Prices
+            reorder_done: Fin de réordonnancement des Prices
+          records:
+            title: Prices
+            sorry_no_results: Désolé ! Aucun résultat.
+            no_items_yet: Il n'y a actuellement aucun(e) Price. Cliquer sur "Créer
+              un(e) nouve(au/l/lle) Price" pour créer votre premi(er/ère) price.
+          price:
+            view_live_html: Voir ce(t/tte) price <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) price
+            delete: Supprimer définitivement ce(t/tte) price
         addresses:
           actions:
             create_new: Créer un(e) nouve(au/l/lle) Address
@@ -55,6 +71,9 @@ fr:
               fenêtre)</em>
             edit: Modifier ce(t/tte) accomodation
             delete: Supprimer définitivement ce(t/tte) accomodation
+      prices:
+        show:
+          other: Autres Prices
       addresses:
         show:
           other: Autres Addresses
@@ -66,6 +85,11 @@ fr:
           other: Autres Accomodations
   activerecord:
     attributes:
+      refinery/accomodations/price:
+        original: Original
+        after_discount: After Discount
+        distribution: Distribution
+        accomodation_id: Accomodation
       refinery/accomodations/address:
         street: Street
         town: Town

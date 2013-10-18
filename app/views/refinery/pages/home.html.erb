@@ -28,6 +28,7 @@
 			<%@accomodations.each do |accomodation|%>
 			<div class="well well-sm snippet_div">
 				<p> <%= accomodation.name%> </p>
+				<p class="label label-warning"><%= "#{accomodation.price.after_discount} #{accomodation.price.currency}" %> </p>
 				<p class="label label-info"><%= accomodation.address.street %></p>
 				<a href="<%= accomodation.url%>" class="btn btn-success btn-xs">visit</a>
 			</div>

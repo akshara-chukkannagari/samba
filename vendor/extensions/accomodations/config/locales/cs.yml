@@ -1,6 +1,8 @@
 cs:
   refinery:
     plugins:
+      prices:
+        title: Prices
       addresses:
         title: Addresses
       accomodation_types:
@@ -9,6 +11,20 @@ cs:
         title: Accomodations
     accomodations:
       admin:
+        prices:
+          actions:
+            create_new: Přidat Price
+            reorder: Řadit Prices
+            reorder_done: Konec řazení Prices
+          records:
+            title: Prices
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Prices. Zvolte "Přidat Price"
+              pro přidání prvního price.
+          price:
+            view_live_html: Zobrazit náhled price<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit price
+            delete: Smazat price
         addresses:
           actions:
             create_new: Přidat Address
@@ -53,6 +69,9 @@ cs:
               okně)</em>
             edit: Upravit accomodation
             delete: Smazat accomodation
+      prices:
+        show:
+          other: Další Prices
       addresses:
         show:
           other: Další Addresses
@@ -64,6 +83,11 @@ cs:
           other: Další Accomodations
   activerecord:
     attributes:
+      refinery/accomodations/price:
+        original: Original
+        after_discount: After Discount
+        distribution: Distribution
+        accomodation_id: Accomodation
       refinery/accomodations/address:
         street: Street
         town: Town
