@@ -34,26 +34,6 @@ ActiveRecord::Schema.define(:version => 20131017120625) do
     t.datetime "updated_at", :null => false
   end
 
-  create_table "refinery_hotels", :force => true do |t|
-    t.string   "name"
-    t.string   "description"
-    t.string   "phone_number"
-    t.string   "email"
-    t.string   "url"
-    t.string   "address"
-    t.integer  "teaser_id"
-    t.integer  "position"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
-  end
-
-  create_table "refinery_hotels_places", :force => true do |t|
-    t.string   "name"
-    t.integer  "position"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
   create_table "refinery_image_page_translations", :force => true do |t|
     t.integer  "refinery_image_page_id"
     t.string   "locale"
