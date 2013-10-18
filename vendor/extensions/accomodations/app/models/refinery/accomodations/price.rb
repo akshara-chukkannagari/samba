@@ -4,7 +4,7 @@ module Refinery
 
       attr_accessible :original, :after_discount, :distribution, :currency, :accomodation_id, :position
 
-      validates :original, :distribution, :presence => true, :uniqueness => true
+      validates :original, :distribution, :presence => true
     end
   end
 end
