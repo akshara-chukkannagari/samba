@@ -7,56 +7,63 @@
  *
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
- */
- /* Carousel base class */
-    .carousel {
-      margin-bottom: 60px;
-    }
+* Carousel base class 
+* = require bootstrap
+* = require bootstrap-theme.min.css
+* */
 
-    .carousel .container {
-      position: relative;
-      z-index: 9;
-    }
+.carousel {
+	margin-bottom: 60px;
+}
 
-    .carousel-control {
-      height: 80px;
-      margin-top: 0;
-      font-size: 120px;
-      text-shadow: 0 1px 1px rgba(0,0,0,.4);
-      background-color: transparent;
-      border: 0;
-      z-index: 10;
-    }
+.carousel .container {
+	position: relative;
+	z-index: 9;
+}
 
-    .carousel .item {
-      height: 300px;
-    }
-    .carousel img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      min-width: 100%;
-      height: 300px;
-    }
+.carousel-control {
+	height: 80px;
+	margin-top: 0;
+	font-size: 120px;
+	text-shadow: 0 1px 1px rgba(0,0,0,.4);
+	background-color: transparent;
+	border: 0;
+	z-index: 10;
+}
 
-    .carousel-caption {
-      background-color: transparent;
-      position: static;
-      max-width: 550px;
-      padding: 0 20px;
-      margin-top: 200px;
-    }
-    .carousel-caption h1,
-    .carousel-caption .lead {
-      margin: 0;
-      line-height: 1.25;
-      color: #fff;
-      text-shadow: 0 1px 1px rgba(0,0,0,.4);
-    }
-    .carousel-caption .btn {
-      margin-top: 10px;
-    }
+.carousel .item {
+	height: 300px;
+}
+.carousel img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	height: 300px;
+}
 
+.samba_text {
+	background-color: #00A017;
+	font-family: "Arial Black";
+	font-size: medium;
+}
+
+.carousel-caption {
+	background-color: transparent;
+	position: static;
+	max-width: 550px;
+	padding: 0 20px;
+	margin-top: 200px;
+}
+.carousel-caption h1, .carousel-caption .lead {
+	margin: 0;
+	line-height: 1.25;
+	color: #fff;
+	text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+.carousel-caption .btn {
+	margin-top: 10px;
+}
 
 .space_left_right {
 	margin-right: 1%;

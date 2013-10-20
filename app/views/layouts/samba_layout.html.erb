@@ -2,13 +2,14 @@
 <html>
 	<head>
 		<title>Safari</title>
-		<%= stylesheet_link_tag    "jquery-ui-1.10.3.custom", "samba", "bootstrap", "bootstrap-theme", :media => "all" %>
-		<%= javascript_include_tag "jquery-1.9.1", "bootstrap", "carousel" %>
+		<%= stylesheet_link_tag "samba"%>
+		<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 		<%= csrf_meta_tags %>
 	</head>
 	<body>
-		<div class="container container-fluid">
-		
+		<div class="container">
+
 			<div>
 				<%= yield%>
 			</div>
