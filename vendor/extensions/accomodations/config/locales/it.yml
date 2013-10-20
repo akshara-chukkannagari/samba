@@ -1,6 +1,8 @@
 it:
   refinery:
     plugins:
+      businesses:
+        title: Businesses
       prices:
         title: Prices
       addresses:
@@ -11,6 +13,20 @@ it:
         title: Accomodations
     accomodations:
       admin:
+        businesses:
+          actions:
+            create_new: Aggiungi Nuovo Business
+            reorder: Riordina Businesses
+            reorder_done: Termina il Riordino di Businesses
+          records:
+            title: Businesses
+            sorry_no_results: Spiacenti! Nessun risultato trovato
+            no_items_yet: Non ci sono ancora Businesses. Clicca "Aggiungi Nuovo Business"
+              per aggiungere il tuo primo business.
+          business:
+            view_live_html: Guarda live questo business <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo business
+            delete: Rimuovi per sempre questo business
         prices:
           actions:
             create_new: Aggiungi Nuovo Price
@@ -69,6 +85,9 @@ it:
               finestra)</em>
             edit: Modifica questo accomodation
             delete: Rimuovi per sempre questo accomodation
+      businesses:
+        show:
+          other: Altri Businesses
       prices:
         show:
           other: Altri Prices
@@ -83,6 +102,14 @@ it:
           other: Altri Accomodations
   activerecord:
     attributes:
+      refinery/accomodations/business:
+        name: Name
+        details: Details
+        licence: Licence
+        nic: Nic
+        url: Url
+        phone: Phone
+        email: Email
       refinery/accomodations/price:
         original: Original
         after_discount: After Discount

@@ -1,6 +1,8 @@
 fr:
   refinery:
     plugins:
+      businesses:
+        title: Businesses
       prices:
         title: Prices
       addresses:
@@ -11,6 +13,20 @@ fr:
         title: Accomodations
     accomodations:
       admin:
+        businesses:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Business
+            reorder: Réordonner les Businesses
+            reorder_done: Fin de réordonnancement des Businesses
+          records:
+            title: Businesses
+            sorry_no_results: Désolé ! Aucun résultat.
+            no_items_yet: Il n'y a actuellement aucun(e) Business. Cliquer sur "Créer
+              un(e) nouve(au/l/lle) Business" pour créer votre premi(er/ère) business.
+          business:
+            view_live_html: Voir ce(t/tte) business <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) business
+            delete: Supprimer définitivement ce(t/tte) business
         prices:
           actions:
             create_new: Créer un(e) nouve(au/l/lle) Price
@@ -71,6 +87,9 @@ fr:
               fenêtre)</em>
             edit: Modifier ce(t/tte) accomodation
             delete: Supprimer définitivement ce(t/tte) accomodation
+      businesses:
+        show:
+          other: Autres Businesses
       prices:
         show:
           other: Autres Prices
@@ -85,6 +104,14 @@ fr:
           other: Autres Accomodations
   activerecord:
     attributes:
+      refinery/accomodations/business:
+        name: Name
+        details: Details
+        licence: Licence
+        nic: Nic
+        url: Url
+        phone: Phone
+        email: Email
       refinery/accomodations/price:
         original: Original
         after_discount: After Discount

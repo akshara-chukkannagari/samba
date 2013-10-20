@@ -1,6 +1,8 @@
 nb:
   refinery:
     plugins:
+      businesses:
+        title: Businesses
       prices:
         title: Prices
       addresses:
@@ -11,6 +13,21 @@ nb:
         title: Accomodations
     accomodations:
       admin:
+        businesses:
+          actions:
+            create_new: Lag en ny Business
+            reorder: Endre rekkefølgen på Businesses
+            reorder_done: Ferdig å endre rekkefølgen Businesses
+          records:
+            title: Businesses
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Businesses enda. Klikk på "Lag en ny Business"
+              for å legge til din første business.
+          business:
+            view_live_html: Vis hvordan denne business ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne business
+            delete: Fjern denne business permanent
         prices:
           actions:
             create_new: Lag en ny Price
@@ -71,6 +88,9 @@ nb:
               i et nytt vindu)</em>
             edit: Rediger denne accomodation
             delete: Fjern denne accomodation permanent
+      businesses:
+        show:
+          other: Andre Businesses
       prices:
         show:
           other: Andre Prices
@@ -85,6 +105,14 @@ nb:
           other: Andre Accomodations
   activerecord:
     attributes:
+      refinery/accomodations/business:
+        name: Name
+        details: Details
+        licence: Licence
+        nic: Nic
+        url: Url
+        phone: Phone
+        email: Email
       refinery/accomodations/price:
         original: Original
         after_discount: After Discount

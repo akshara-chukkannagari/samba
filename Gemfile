@@ -56,3 +56,4 @@ gem 'refinerycms-snippets', :path => 'vendor/extensions'
 
 gem 'refinerycms-accomodations', :path => 'vendor/extensions'
 gem 'refinerycms-accomodation_types', :path => 'vendor/extensions'
+

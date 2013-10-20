@@ -23,18 +23,18 @@
 <div class="field">
 	<h2> Price </h2>
 	<%= f.fields_for :price do |price_fields|%>
-	
+
 	<%= price_fields.label :original%>
 	<%= price_fields.number_field :original %>
-	
+
 	<%= price_fields.label :after_discount%>
 	<%= price_fields.number_field :after_discount %>
-	
+
 	<%= price_fields.label :distribution%>
 	<%= price_fields.select :distribution, PRICE_DISTRIBUTION%>
-	
+
 	<%= price_fields.label :currency%>
-	<%=price_fields.select:currency, CURRENCIES %>
+	<%= price_fields.select:currency, CURRENCIES %>
 
 	<%end%>
 </div>
@@ -48,39 +48,6 @@
 	<%= f.date_select :available_till %>
 </div>
 
-<div class="field ">
-	<h2> Address </h2>
-	<%= f.fields_for :address do |address_fields| %>
-	<%= f.label :street %>
-	<%= address_fields.text_field :street %>
-
-	<%= f.label :street_number %>
-	<%= address_fields.text_field :street_number %>
-
-	<%= f.label :town %>
-	<%= address_fields.text_field :town%>
-
-	<%= f.label :district %>
-	<%= address_fields.text_field :district%>
-
-	<%= f.label :state %>
-	<%= address_fields.text_field :state%>
-
-	<%= f.label :country %>
-	<%= address_fields.text_field :country%>
-	<div>
-		<%= f.label :lat %>
-		<%= address_fields.text_field :lat%>
-
-		<%= f.label :lng %>
-		<%= address_fields.text_field :lng%>
-
-		<%= f.label :alt %>
-		<%= address_fields.text_field :alt%>
-	</div>
-
-	<%end%>
-</div>
 
 <div class='field'>
 	<%= f.label :teaser_image -%>

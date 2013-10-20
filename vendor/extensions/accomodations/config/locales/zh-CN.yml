@@ -1,6 +1,8 @@
 zh-CN:
   refinery:
     plugins:
+      businesses:
+        title: Businesses
       prices:
         title: Prices
       addresses:
@@ -11,6 +13,19 @@ zh-CN:
         title: Accomodations
     accomodations:
       admin:
+        businesses:
+          actions:
+            create_new: 建立新的 Business
+            reorder: 对 Businesses 重新排序
+            reorder_done: 对 Businesses 的重新排序结束
+          records:
+            title: Businesses
+            sorry_no_results: 对不起，未找到结果。
+            no_items_yet: 目前没有 Businesses . 点击 "Add New Business" 创建一个business.
+          business:
+            view_live_html: 查看 business 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 business
+            delete: 永久删除 business
         prices:
           actions:
             create_new: 建立新的 Price
@@ -64,6 +79,9 @@ zh-CN:
             view_live_html: 查看 accomodation 的最新内容.<br/><em>(新窗口中打开)</em>
             edit: 编辑 accomodation
             delete: 永久删除 accomodation
+      businesses:
+        show:
+          other: 其他 Businesses
       prices:
         show:
           other: 其他 Prices
@@ -78,6 +96,14 @@ zh-CN:
           other: 其他 Accomodations
   activerecord:
     attributes:
+      refinery/accomodations/business:
+        name: Name
+        details: Details
+        licence: Licence
+        nic: Nic
+        url: Url
+        phone: Phone
+        email: Email
       refinery/accomodations/price:
         original: Original
         after_discount: After Discount

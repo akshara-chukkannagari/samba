@@ -11,6 +11,7 @@ class CreateAccomodationsAddresses < ActiveRecord::Migration
       t.float :lng
       t.float :alt
       t.integer :accomodation_id
+      t.integer :business_id
       t.integer :position
 
       t.timestamps

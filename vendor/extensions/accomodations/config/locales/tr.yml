@@ -1,6 +1,8 @@
 tr:
   refinery:
     plugins:
+      businesses:
+        title: Businesses
       prices:
         title: Prices
       addresses:
@@ -11,6 +13,21 @@ tr:
         title: Accomodations
     accomodations:
       admin:
+        businesses:
+          actions:
+            create_new: Yeni Ekle Business
+            reorder: Tekrar sirala Businesses
+            reorder_done: Tekrar siralama tamamlandiBusinesses
+          records:
+            title: Businesses
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Businesses yok henuz.  Tikla "Yeni Ekle Business"
+              eklemek senin ilk business.
+          business:
+            view_live_html: Bunu canlu business goruntule <br/><em>(yeni bir pencerede
+              acar)</em>
+            edit: Bunu Duzenle business
+            delete: Bunu Sil business sonsuza dek
         prices:
           actions:
             create_new: Yeni Ekle Price
@@ -71,6 +88,9 @@ tr:
               acar)</em>
             edit: Bunu Duzenle accomodation
             delete: Bunu Sil accomodation sonsuza dek
+      businesses:
+        show:
+          other: Diger Businesses
       prices:
         show:
           other: Diger Prices
@@ -85,6 +105,14 @@ tr:
           other: Diger Accomodations
   activerecord:
     attributes:
+      refinery/accomodations/business:
+        name: Name
+        details: Details
+        licence: Licence
+        nic: Nic
+        url: Url
+        phone: Phone
+        email: Email
       refinery/accomodations/price:
         original: Original
         after_discount: After Discount

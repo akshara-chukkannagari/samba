@@ -81,4 +81,55 @@ Refinery::Core::Engine.routes.draw do
     end
   end
 
+
+  # Frontend routes
+  namespace :accomodations do
+    resources :businesses, :only => [:index, :show]
+  end
+
+  # Admin routes
+  namespace :accomodations, :path => '' do
+    namespace :admin, :path => "#{Refinery::Core.backend_route}/accomodations" do
+      resources :businesses, :except => :show do
+        collection do
+          post :update_positions
+        end
+      end
+    end
+  end
+
+
+  # Frontend routes
+  namespace :accomodations do
+    resources :businesses, :only => [:index, :show]
+  end
+
+  # Admin routes
+  namespace :accomodations, :path => '' do
+    namespace :admin, :path => "#{Refinery::Core.backend_route}/accomodations" do
+      resources :businesses, :except => :show do
+        collection do
+          post :update_positions
+        end
+      end
+    end
+  end
+
+
+  # Frontend routes
+  namespace :accomodations do
+    resources :businesses, :only => [:index, :show]
+  end
+
+  # Admin routes
+  namespace :accomodations, :path => '' do
+    namespace :admin, :path => "#{Refinery::Core.backend_route}/accomodations" do
+      resources :businesses, :except => :show do
+        collection do
+          post :update_positions
+        end
+      end
+    end
+  end
+
 end

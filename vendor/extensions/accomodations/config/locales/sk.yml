@@ -1,6 +1,8 @@
 sk:
   refinery:
     plugins:
+      businesses:
+        title: Businesses
       prices:
         title: Prices
       addresses:
@@ -11,6 +13,20 @@ sk:
         title: Accomodations
     accomodations:
       admin:
+        businesses:
+          actions:
+            create_new: Pridať Business
+            reorder: Preusporiadať Businesses
+            reorder_done: Koniec radenia Businesses
+          records:
+            title: Businesses
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Businesses. Kliknite na "Pridať
+              Business" pre pridanie prvého business.
+          business:
+            view_live_html: Zobraziť náhľad business<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť business
+            delete: Zmazať business
         prices:
           actions:
             create_new: Pridať Price
@@ -69,6 +85,9 @@ sk:
               okne)</em>
             edit: Upraviť accomodation
             delete: Zmazať accomodation
+      businesses:
+        show:
+          other: Daľšie Businesses
       prices:
         show:
           other: Daľšie Prices
@@ -83,6 +102,14 @@ sk:
           other: Daľšie Accomodations
   activerecord:
     attributes:
+      refinery/accomodations/business:
+        name: Name
+        details: Details
+        licence: Licence
+        nic: Nic
+        url: Url
+        phone: Phone
+        email: Email
       refinery/accomodations/price:
         original: Original
         after_discount: After Discount

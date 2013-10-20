@@ -1,6 +1,8 @@
 nl:
   refinery:
     plugins:
+      businesses:
+        title: Businesses
       prices:
         title: Prices
       addresses:
@@ -11,6 +13,21 @@ nl:
         title: Accomodations
     accomodations:
       admin:
+        businesses:
+          actions:
+            create_new: Nieuwe Business toevoegen
+            reorder: De volgorde van de Businesses wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Business-volgorde
+          records:
+            title: Businesses
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Businesses. Druk op 'Nieuwe Business toevoegen'
+              om de eerste toe te voegen.
+          business:
+            view_live_html: Deze business op de website bekijken <br/><em>(opent in
+              een nieuw venster)</em>
+            edit: Bewerk deze business
+            delete: Deze business definitief verwijderen
         prices:
           actions:
             create_new: Nieuwe Price toevoegen
@@ -71,6 +88,9 @@ nl:
               in een nieuw venster)</em>
             edit: Bewerk deze accomodation
             delete: Deze accomodation definitief verwijderen
+      businesses:
+        show:
+          other: Andere Businesses
       prices:
         show:
           other: Andere Prices
@@ -85,6 +105,14 @@ nl:
           other: Andere Accomodations
   activerecord:
     attributes:
+      refinery/accomodations/business:
+        name: Name
+        details: Details
+        licence: Licence
+        nic: Nic
+        url: Url
+        phone: Phone
+        email: Email
       refinery/accomodations/price:
         original: Original
         after_discount: After Discount
