@@ -28,9 +28,6 @@
 
 .home_search_form_text h2 {
 	display: inline-block;
-	background-color: #FFFFFF;
-	color: #31B0D5;
-	font-size: large;
 }
 
 
@@ -47,8 +44,9 @@
 }
 
 .snippet_div {
-	margin-top: 5%;
+	margin-top: 2%;
 	display:inline-block ;
 	background-color: #555555;
 }
+
 

@@ -1,63 +1,116 @@
-<% content_for :body_content_title do %>
-  <%= @accomodation.name %>
-<% end %>
+<div class="container">
 
-<% content_for :body do %>
-  <section>
-    <h1>Name</h1>
-    <p>
-      <%=raw @accomodation.name %>
-    </p>
-  </section>
-  <section>
-    <h1>Details</h1>
-    <p>
-      <%=raw @accomodation.details %>
-    </p>
-  </section>
-  <section>
-    <h1>Teaser Image</h1>
-    <p>
-      <%= image_fu @accomodation.teaser_image, nil %>
-    </p>
-  </section>
-  <section>
-    <h1>Phone Number</h1>
-    <p>
-      <%=raw @accomodation.phone_number %>
-    </p>
-  </section>
-  <section>
-    <h1>Email</h1>
-    <p>
-      <%=raw @accomodation.email %>
-    </p>
-  </section>
-  <section>
-    <h1>Url</h1>
-    <p>
-      <%=raw @accomodation.url %>
-    </p>
-  </section>
-  <section>
-    <h1>User</h1>
-    <p>
-      <%=raw @accomodation.user_id %>
-    </p>
-  </section>
-<% end %>
+	<!-- Carousel
+	================================================== -->
+	<div id="myCarousel" class="carousel slide">
+		<div class="carousel-inner">
+			<div class="item active">
+				<img src="../assets/img/examples/slide-01.jpg" alt="">
+				<div class="container">
+					<div class="carousel-caption">
+						<h1>Example headline.</h1>
+						<p class="lead">
+							Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+						</p>
+						<a class="btn btn-large btn-primary" href="#">Sign up today</a>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<img src="../assets/img/examples/slide-02.jpg" alt="">
+				<div class="container">
+					<div class="carousel-caption">
+						<h1>Another example headline.</h1>
+						<p class="lead">
+							Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+						</p>
+						<a class="btn btn-large btn-primary" href="#">Learn more</a>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<img src="../assets/img/examples/slide-03.jpg" alt="">
+				<div class="container">
+					<div class="carousel-caption">
+						<h1>One more for good measure.</h1>
+						<p class="lead">
+							Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+						</p>
+						<a class="btn btn-large btn-primary" href="#">Browse gallery</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+		<a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+	</div><!-- /.carousel -->
 
+</div>
+<div class="hero-unit">
+	<% content_for :body_content_title do %>
+	<h1> <%= @accomodation.name %> </h1>
+	<% end %>
+</div>
+
+<div class="panel panel-body">
+
+	<% content_for :body do %>
+	<div>
+		<h4><p class="label label-info"></p> Name</h4>
+		<p>
+			<%= raw @accomodation.name %>
+		</p>
+	</div>
+	<div>
+		<h4>Details</h4>
+		<p>
+			<%= raw @accomodation.details %>
+		</p>
+	</div>
+	<div>
+		<h4>Teaser Image</h4>
+		<p>
+			<%= image_fu @accomodation.teaser_image, nil %>
+		</p>
+	</div>
+	<div>
+		<h4>Phone Number</h4>
+		<p>
+			<%= raw @accomodation.phone_number %>
+		</p>
+	</div>
+	<div>
+		<h4>Email</h4>
+		<p>
+			<%= raw @accomodation.email %>
+		</p>
+	</div>
+	<div>
+		<h4>Url</h4>
+		<p>
+			<%= raw @accomodation.url %>
+		</p>
+	</div>
+	<div>
+		<h4>User</h4>
+		<p>
+			<%= raw @accomodation.user_id %>
+		</p>
+	</div>
+	<% end %>
+
+</div>
 <% content_for :side_body do %>
-  <aside>
-    <h2><%= t('.other') %></h2>
-    <ul id="accomodations">
-      <% @accomodations.each do |accomodation| %>
-        <li>
-          <%= link_to accomodation.name, refinery.accomodations_accomodation_path(accomodation) %>
-        </li>
-      <% end %>
-    </ul>
-  </aside>
+<aside>
+	<h2><%= t('.other') %></h2>
+	<ul id="accomodations">
+		<% @accomodations.each do |accomodation| %>
+		<li>
+			<%= link_to accomodation.name, refinery.accomodations_accomodation_path(accomodation) %>
+		</li>
+		<% end %>
+	</ul>
+</aside>
 <% end %>
 
 <%= render '/refinery/content_page' %>

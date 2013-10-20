@@ -1,7 +1,7 @@
 module Refinery
   module Accomodations
     class AccomodationsController < ::ApplicationController
-
+      layout "layouts/samba_layout"
       before_filter :find_all_accomodations
       before_filter :find_page
 
