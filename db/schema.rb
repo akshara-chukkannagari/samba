@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131018132129) do
+ActiveRecord::Schema.define(:version => 20131020201408) do
 
   create_table "refinery_accomodations", :force => true do |t|
     t.string   "name"
@@ -53,6 +53,19 @@ ActiveRecord::Schema.define(:version => 20131018132129) do
     t.integer  "street_number"
   end
 
+  create_table "refinery_accomodations_businesses", :force => true do |t|
+    t.string   "name"
+    t.text     "details"
+    t.string   "licence"
+    t.string   "nic"
+    t.string   "url"
+    t.string   "phone"
+    t.string   "email"
+    t.integer  "position"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "refinery_accomodations_prices", :force => true do |t|
     t.float    "original"
     t.float    "after_discount"
@@ -62,26 +75,6 @@ ActiveRecord::Schema.define(:version => 20131018132129) do
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
     t.string   "currency"
-  end
-
-  create_table "refinery_hotels", :force => true do |t|
-    t.string   "name"
-    t.string   "description"
-    t.string   "phone_number"
-    t.string   "email"
-    t.string   "url"
-    t.string   "address"
-    t.integer  "teaser_id"
-    t.integer  "position"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
-  end
-
-  create_table "refinery_hotels_places", :force => true do |t|
-    t.string   "name"
-    t.integer  "position"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
   end
 
   create_table "refinery_image_page_translations", :force => true do |t|
