@@ -24,7 +24,7 @@ gem 'therubyracer'
 gem 'execjs'
 gem 'jquery-rails'
 
-gem 'passenger'
+#gem 'passenger'
 
 
 # To use ActiveModel has_secure_password
