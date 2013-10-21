@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131020212850) do
+ActiveRecord::Schema.define(:version => 20131021084034) do
 
   create_table "refinery_accomodations", :force => true do |t|
     t.string   "name"
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(:version => 20131020212850) do
     t.datetime "available_from"
     t.datetime "available_till"
     t.boolean  "sold_out"
+    t.integer  "business_id"
   end
 
   create_table "refinery_accomodations_accomodation_types", :force => true do |t|

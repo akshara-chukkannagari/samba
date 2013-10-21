@@ -4,6 +4,7 @@ Refinery::PagesController.class_eval do
   
   protected 
   def find_all_snippets
-    @accomodations = Refinery::Accomodations::Accomodation.all
+    @businesses = Refinery::Accomodations::Business.all
+    @accomodation = Refinery::Accomodations::Accomodation.last
   end
 end

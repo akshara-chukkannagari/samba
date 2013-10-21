@@ -10,6 +10,7 @@ module Refinery
         protected
         def find_all_accomodation_types
           @accomodation_types = Refinery::Accomodations::AccomodationType.all
+          @businesses = Refinery::Accomodations::Business.all
         end
 
       end

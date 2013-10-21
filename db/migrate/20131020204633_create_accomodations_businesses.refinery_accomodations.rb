@@ -10,7 +10,6 @@ class CreateAccomodationsBusinesses < ActiveRecord::Migration
       t.string :url
       t.string :phone
       t.string :email
-      t.integer :business_id
       t.integer :position
 
       t.timestamps

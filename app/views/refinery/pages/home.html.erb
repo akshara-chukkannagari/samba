@@ -27,19 +27,19 @@
 	</div>
 
 	<div class="col-md-4">
-		<%@accomodations.each do |accomodation|%>
+		<%@businesses.each do |business|%>
 		<div class="snippet_div well well-sm ">
 
-			<h4><span class="label label-info"><%= accomodation.name%> </span></h4>
+			<h4><span class="label label-info"><%= business.name%> </span></h4>
 			<div >
-				<span class=" badge"> <%= "#{accomodation.price.currency} #{accomodation.price.after_discount} " %> </span>
+				<span class=" badge"> <%= "#{business.accomodations.length} " %> </span>
 			</div>
 
 			<p class="label label-info">
-				<%= accomodation.address.street %>
+				<%= business.address.street %>
 			</p>
 			<p>
-				<a href="<%= accomodation.url%>" class="btn btn-success btn-xs">visit</a>
+				<a href="<%= business.url%>" class="btn btn-success btn-xs">visit</a>
 			</p>
 		</div>
 
