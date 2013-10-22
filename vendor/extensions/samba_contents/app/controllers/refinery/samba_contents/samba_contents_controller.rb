@@ -1,6 +1,8 @@
 module Refinery
   module SambaContents
     class SambaContentsController < ::ApplicationController
+      
+      layout "content_layout"
 
       before_filter :find_all_samba_contents
       before_filter :find_page

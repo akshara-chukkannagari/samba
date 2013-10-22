@@ -1,46 +1,33 @@
-<% content_for :body_content_title do %>
-  <%= @samba_content.title %>
-<% end %>
+<div class="container">
 
-<% content_for :body do %>
-  <section>
-    <h1>Title</h1>
-    <p>
-      <%=raw @samba_content.title %>
-    </p>
-  </section>
-  <section>
-    <h1>Description</h1>
-    <p>
-      <%=raw @samba_content.description %>
-    </p>
-  </section>
-  <section>
-    <h1>User</h1>
-    <p>
-      <%=raw @samba_content.user_id %>
-    </p>
-  </section>
-  <div>
-  	<%@samba_content.images.each do |image|%>
-  	  <p>
-  	  	<%= image.inspect%>
-  	  </p>
-  	<%end%>
-  </div>
-<% end %>
+	<div class="row">
+		<div class="span6">
+			<h2> 
+			<span class="label label-success">
+				<%= @samba_content.title %> 
+			</span>
+			</h2>
+		</div>
 
-<% content_for :side_body do %>
-  <aside>
-    <h2><%= t('.other') %></h2>
-    <ul id="samba_contents">
-      <% @samba_contents.each do |samba_content| %>
-        <li>
-          <%= link_to samba_content.title, refinery.samba_contents_samba_content_path(samba_content) %>
-        </li>
-      <% end %>
-    </ul>
-  </aside>
-<% end %>
+	</div>
 
-<%= render '/refinery/content_page' %>
+	<div class="row">
+
+		<div class="col-9 col-sm-9 col-lg-9">
+
+			<p>
+				<%= raw @samba_content.description %>
+			</p>
+		</div>
+		<div class="col-3 col-sm-3 col-lg-3 samba_content">
+			<%@samba_content.images.each do |image|%>
+
+			<%= image_tag("/system/refinery/images/#{image.image_uid}")%>
+
+			<%end%>
+		</div>
+	</div>
+
+</div>
+
+<%= raw @samba_content.user_id %>
