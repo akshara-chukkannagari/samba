@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="samba_contents">
+    <% @samba_contents.each do |samba_content| %>
+      <li>
+        <%= link_to samba_content.title, refinery.samba_contents_samba_content_path(samba_content) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

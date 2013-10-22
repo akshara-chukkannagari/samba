@@ -1,0 +1,20 @@
+<li class='clearfix record <%= cycle("on", "on-hover") %>' id="<%= dom_id(samba_content) -%>">
+  <span class='title'>
+    <%= samba_content.title %>
+
+  </span>
+  <span class='actions'>
+    
+    <%= link_to refinery_icon_tag("application_go.png"), refinery.samba_contents_samba_content_path(samba_content),
+        :title => t('.view_live_html'),
+        :target => "_blank" %>
+    
+    <%= link_to refinery_icon_tag("application_edit.png"), refinery.edit_samba_contents_admin_samba_content_path(samba_content),
+         :title => t('.edit') %>
+    <%= link_to refinery_icon_tag("delete.png"), refinery.samba_contents_admin_samba_content_path(samba_content),
+        :class => "cancel confirm-delete",
+        :title => t('.delete'),
+        :confirm => t('message', :scope => 'refinery.admin.delete', :title => samba_content.title),
+        :method => :delete %>
+  </span>
+</li>
