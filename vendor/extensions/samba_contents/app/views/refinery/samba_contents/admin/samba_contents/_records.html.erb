@@ -1,0 +1,16 @@
+<%= render 'refinery/admin/search_header', :url => refinery.samba_contents_admin_samba_contents_path %>
+<div class='pagination_container'>
+  <% if @samba_contents.any? %>
+    <%= render 'samba_contents' %>
+  <% else %>
+    <p>
+      <% unless searching? %>
+        <strong>
+          <%= t('.no_items_yet') %>
+        </strong>
+      <% else %>
+        <%= t('no_results', :scope => 'refinery.admin.search') %>
+      <% end %>
+    </p>
+  <% end %>
+</div>

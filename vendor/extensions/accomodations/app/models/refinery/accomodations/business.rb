@@ -8,7 +8,7 @@ module Refinery
      
       has_one :address
       has_many :accomodations
-     
+   
       after_initialize :make_address
       accepts_nested_attributes_for :address
       protected

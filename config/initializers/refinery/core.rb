@@ -41,7 +41,7 @@ Refinery::Core.configure do |config|
   # config.register_javascript "prototype-rails"
 
   # Register extra stylesheet for backend (optional options)
-  config.register_stylesheet "jquery-ui-1.10.3.custom", "bootstrap","bootstrap-theme", "application", :media => 'screen'
+  config.register_stylesheet "jquery-ui-1.10.3.custom","font-awesome", "bootstrap","bootstrap-theme", "application", :media => 'screen'
 
   # Specify a different backend path than the default of /refinery.
   # config.backend_route = "refinery"
