@@ -7,8 +7,6 @@ PATH
       refinerycms-core (~> 2.1.0)
     refinerycms-samba_contents (1.0)
       refinerycms-core (~> 2.1.0)
-    refinerycms-snippets (1.0)
-      refinerycms-core (~> 2.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -212,7 +210,6 @@ DEPENDENCIES
   refinerycms-acts-as-indexed (~> 1.0.0)
   refinerycms-page-images (~> 2.1.0)
   refinerycms-samba_contents!
-  refinerycms-snippets!
   sass-rails (~> 3.2.3)
   therubyracer
   uglifier (>= 1.0.3)
