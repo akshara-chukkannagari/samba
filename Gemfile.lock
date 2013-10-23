@@ -164,6 +164,8 @@ GEM
       acts_as_indexed (~> 0.8.0)
       dragonfly (~> 0.9.12)
       refinerycms-core (= 2.1.0)
+    refinerycms-settings (2.1.0)
+      refinerycms-core (~> 2.1.0)
     routing-filter (0.3.1)
       actionpack
     sass (3.2.12)
@@ -210,6 +212,7 @@ DEPENDENCIES
   refinerycms-acts-as-indexed (~> 1.0.0)
   refinerycms-page-images (~> 2.1.0)
   refinerycms-samba_contents!
+  refinerycms-settings
   sass-rails (~> 3.2.3)
   therubyracer
   uglifier (>= 1.0.3)

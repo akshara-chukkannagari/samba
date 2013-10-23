@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131022124028) do
+ActiveRecord::Schema.define(:version => 20131023114732) do
 
   create_table "refinery_accomodations", :force => true do |t|
     t.string   "name"
@@ -205,6 +205,20 @@ ActiveRecord::Schema.define(:version => 20131022124028) do
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
+
+  create_table "refinery_settings", :force => true do |t|
+    t.string   "name"
+    t.text     "value"
+    t.boolean  "destroyable",     :default => true
+    t.string   "scoping"
+    t.boolean  "restricted",      :default => false
+    t.string   "form_value_type"
+    t.datetime "created_at",                         :null => false
+    t.datetime "updated_at",                         :null => false
+    t.string   "slug"
+  end
+
+  add_index "refinery_settings", ["name"], :name => "index_refinery_settings_on_name"
 
   create_table "refinery_snippets", :force => true do |t|
     t.string   "title"
