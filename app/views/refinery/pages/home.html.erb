@@ -1,49 +1,43 @@
 <div class="container container-fluid">
+	<div class="row">
+		<div class="col-md-6">
 
-	<div class="col-md-8 home_search_form_text">
-
-		<h2><p class="label label-info">enter your trip dates</p></h2>
-
-		<%=form_for "home", :url => "hotel/search", :html => { :class=> "form-horizontal"}, :method=> :get do |f|%>
-		<%= f.label "from", :class => "search_form_text label label-success"%>
-		<div class="form-group">
-			<div class="col-lg-10">
-				<%= f.text_field :start_date  %>
-			</div>
-		</div>
-		<%= f.label "till", :class => "search_form_text label label-success"%>
-		<div class="form-group">
-
-			<div class="col-lg-10">
-				<%= f.text_field :end_date %>
-			</div>
-		</div>
-		<div class="form-group">
-			<div class="col-lg-10">
-				<%= f.submit "Go!", :class => "btn btn-primary"%>
-			</div>
-		</div>
-		<%end%>
-	</div>
-
-	<div class="col-md-4">
-		<%@businesses.each do |business|%>
-		<div class="snippet_div well well-sm ">
-
-			<h4><span class="label label-info"><%= business.name%> </span></h4>
-			<div >
-				<span class=" badge"> <%= "#{business.accomodations.length} " %> </span>
-			</div>
-
+			<h2>
 			<p class="label label-info">
-				<%= business.address.street %>
-			</p>
-			<p>
-				<a href="<%= business.url%>" class="btn btn-success btn-xs">visit</a>
-			</p>
-		</div>
+				enter your trip dates
+			</p></h2>
 
-		<%end%>
+			<%=form_for "home", :url => "hotel/search", :html => { :class=> "form-horizontal"}, :method=> :get do |f|%>
+			<%= f.label "from", :class => "search_form_text label label-success"%>
+			<div class="form-group">
+				<div class="col-lg-10">
+					<%= f.text_field :start_date  %>
+				</div>
+			</div>
+			<%= f.label "till", :class => "search_form_text label label-success"%>
+			<div class="form-group">
+
+				<div class="col-lg-10">
+					<%= f.text_field :end_date %>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-lg-10">
+					<%= f.submit "Go!", :class => "btn btn-primary"%>
+				</div>
+			</div>
+			<%end%>
+		</div>
+		<div class="col-md-6 label label-success">
+			<div class="samba_content">
+				<h3>Discover Hidden Gems of the Unknown World</h3>
+				<div>
+					<%@businesses.each do |business|%>
+					<a href="#" class="btn btn-primary btn-xs"> <span class="badge"><%= business.accomodations.length%></span> <%= business.address.town %></a>
+					<%end%>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 
