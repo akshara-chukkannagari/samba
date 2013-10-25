@@ -38,7 +38,7 @@ Refinery::Core.configure do |config|
   # config.wymeditor_whitelist_tags = {}
 
   # Register extra javascript for backend
-  # config.register_javascript "prototype-rails"
+  config.register_javascript "jquery, bootstrap.min"
 
   # Register extra stylesheet for backend (optional options)
   config.register_stylesheet "jquery-ui-1.10.3.custom","font-awesome", "bootstrap","bootstrap-theme", "application", :media => 'screen'
