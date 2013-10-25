@@ -35,12 +35,12 @@ Refinery::Images.configure do |config|
 
   # Configure Dragonfly
   # This is where in the middleware stack to insert the Dragonfly middleware
-  config.dragonfly_insert_before = "ActionDispatch::Callbacks"
-  config.dragonfly_secret = "a3723db3d555ed53e1d7c8e9adb1c3166c3655fa71360d49"
+  #config.dragonfly_insert_before = "ActionDispatch::Callbacks"
+  #config.dragonfly_secret = "a3723db3d555ed53e1d7c8e9adb1c3166c3655fa71360d49"
   # If you decide to trust file extensions replace :ext below with :format
-  config.dragonfly_url_format = "/system/images/:job/:basename.:ext"
-  config.dragonfly_url_host = ""
-  config.datastore_root_path = "root/projects/samba/public/user_images"
+  #config.dragonfly_url_format = "/system/images/:job/:basename.:ext"
+ # config.dragonfly_url_host = ""
+  #config.datastore_root_path = "root/projects/samba/public/user_images"
   # config.trust_file_extensions = false
 
   # Configure Dragonfly custom storage backend
