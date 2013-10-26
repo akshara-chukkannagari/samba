@@ -4,7 +4,7 @@ module Refinery
       self.table_name = 'refinery_accomodations'
 
       attr_accessible :name, :details, :teaser_image_id, :phone_number, :email, :url, :user_id, :available_from,:available_till,
-      :sold_out, :position, :accomodation_type_id, :business_id
+      :sold_out, :position, :accomodation_type_id, :business_id, :language
       attr_accessible :price_attributes
 
       validates :name, :details, :presence => true

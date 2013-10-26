@@ -14,6 +14,10 @@
 </div>
 
 <div class="field">
+	<%= f.label :language%>
+	<%= f.select(:language, LANGUAGE_CODES)%>
+</div>
+<div class="field">
 	<%= f.label :accomodation_type -%>
 	<%= f.select(:accomodation_type_id,@accomodation_types.collect{|d| [d.name, d.id]})%>
 </div>
