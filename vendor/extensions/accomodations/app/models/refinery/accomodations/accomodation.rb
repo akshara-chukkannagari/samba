@@ -7,7 +7,7 @@ module Refinery
       :sold_out, :position, :accomodation_type_id, :business_id
       attr_accessible :price_attributes
 
-      validates :name, :details,:phone_number, :email, :presence => true
+      validates :name, :details, :presence => true
 
       belongs_to :teaser_image, :class_name => '::Refinery::Image'
       belongs_to :accomodation_type

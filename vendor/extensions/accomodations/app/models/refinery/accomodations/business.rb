@@ -4,6 +4,7 @@ module Refinery
 
       attr_accessible :name, :details, :licence, :nic, :url, :phone, :email, :position
       validates :name, :presence => true, :uniqueness => true
+      validates :details, :phone, :email, :presence => true
       attr_accessible :address_attributes
      
       has_one :address
