@@ -1,0 +1,24 @@
+.samba_content {
+	border-color: #FFFFFF;
+	border-width: 1px;
+	font-family: "Arial Rounded MT Bold";
+}
+
+.samba_content img{
+	height: 100%;
+	width: 100%;
+}
+
+.img-responsive {
+ display: block;
+ height: auto;
+ max-width: 100%;
+}
+
+.blue_color {
+	background-color: #004A8F;
+}
+
+.green_color {
+	background-color: #00A017;
+}

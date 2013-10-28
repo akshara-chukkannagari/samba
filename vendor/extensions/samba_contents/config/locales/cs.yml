@@ -1,0 +1,29 @@
+cs:
+  refinery:
+    plugins:
+      samba_contents:
+        title: Samba Contents
+    samba_contents:
+      admin:
+        samba_contents:
+          actions:
+            create_new: Přidat Samba Content
+            reorder: Řadit Samba Contents
+            reorder_done: Konec řazení Samba Contents
+          records:
+            title: Samba Contents
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Samba Contents. Zvolte "Přidat Samba Content" pro přidání prvního samba content.
+          samba_content:
+            view_live_html: Zobrazit náhled samba content<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit samba content
+            delete: Smazat samba content
+      samba_contents:
+        show:
+          other: Další Samba Contents
+  activerecord:
+    attributes:
+      'refinery/samba_contents/samba_content':
+        title: Title
+        description: Description
+        user_id: User

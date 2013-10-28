@@ -1,0 +1,42 @@
+<%= form_for [refinery, :samba_contents_admin, @samba_content] do |f| -%>
+<%= render '/refinery/admin/error_messages',
+:object => @samba_content,
+:include_object_name => true %>
+
+<div class='field'>
+	<%= f.label :title -%>
+	<%= f.text_field :title, :class => 'larger widest' -%>
+</div>
+
+<div class="field">
+ <%= f.label :language %>
+ <%= f.select :language, LANGUAGE_CODES %>
+</div>
+<div class='field'>
+	<%= render '/refinery/admin/wysiwyg',
+	:f => f,
+	:fields => [:description],
+	:object => "samba_contents/samba_content" -%>
+</div>
+
+<%= render "/refinery/admin/pages/tabs/images", :f => f%>
+
+<div class='field'>
+	<%= f.label :user_id -%>
+	<%= f.text_field :user_id, :disabled => true, :value => "#{current_refinery_user.id}" %>
+</div>
+
+<%= render '/refinery/admin/form_actions', :f => f,
+:continue_editing => false,
+:delete_title => t('delete', :scope => 'refinery.samba_contents.admin.samba_contents.samba_content'),
+:delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @samba_content.title) -%>
+
+<% end -%>
+
+<% content_for :javascripts do -%>
+<script>
+	$(document).ready(function() {
+		page_options.init(false, '', '');
+	}); 
+</script>
+<% end -%>

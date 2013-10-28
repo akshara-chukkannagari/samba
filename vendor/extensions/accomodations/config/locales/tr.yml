@@ -1,0 +1,140 @@
+tr:
+  refinery:
+    plugins:
+      businesses:
+        title: Businesses
+      prices:
+        title: Prices
+      addresses:
+        title: Addresses
+      accomodation_types:
+        title: Accomodation Types
+      accomodations:
+        title: Accomodations
+    accomodations:
+      admin:
+        businesses:
+          actions:
+            create_new: Yeni Ekle Business
+            reorder: Tekrar sirala Businesses
+            reorder_done: Tekrar siralama tamamlandiBusinesses
+          records:
+            title: Businesses
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Businesses yok henuz.  Tikla "Yeni Ekle Business"
+              eklemek senin ilk business.
+          business:
+            view_live_html: Bunu canlu business goruntule <br/><em>(yeni bir pencerede
+              acar)</em>
+            edit: Bunu Duzenle business
+            delete: Bunu Sil business sonsuza dek
+        prices:
+          actions:
+            create_new: Yeni Ekle Price
+            reorder: Tekrar sirala Prices
+            reorder_done: Tekrar siralama tamamlandiPrices
+          records:
+            title: Prices
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Prices yok henuz.  Tikla "Yeni Ekle Price"
+              eklemek senin ilk price.
+          price:
+            view_live_html: Bunu canlu price goruntule <br/><em>(yeni bir pencerede
+              acar)</em>
+            edit: Bunu Duzenle price
+            delete: Bunu Sil price sonsuza dek
+        addresses:
+          actions:
+            create_new: Yeni Ekle Address
+            reorder: Tekrar sirala Addresses
+            reorder_done: Tekrar siralama tamamlandiAddresses
+          records:
+            title: Addresses
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Addresses yok henuz.  Tikla "Yeni Ekle Address"
+              eklemek senin ilk address.
+          address:
+            view_live_html: Bunu canlu address goruntule <br/><em>(yeni bir pencerede
+              acar)</em>
+            edit: Bunu Duzenle address
+            delete: Bunu Sil address sonsuza dek
+        accomodation_types:
+          actions:
+            create_new: Yeni Ekle Accomodation Type
+            reorder: Tekrar sirala Accomodation Types
+            reorder_done: Tekrar siralama tamamlandiAccomodation Types
+          records:
+            title: Accomodation Types
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Accomodation Types yok henuz.  Tikla "Yeni
+              Ekle Accomodation Type" eklemek senin ilk accomodation type.
+          accomodation_type:
+            view_live_html: Bunu canlu accomodation type goruntule <br/><em>(yeni
+              bir pencerede acar)</em>
+            edit: Bunu Duzenle accomodation type
+            delete: Bunu Sil accomodation type sonsuza dek
+        accomodations:
+          actions:
+            create_new: Yeni Ekle Accomodation
+            reorder: Tekrar sirala Accomodations
+            reorder_done: Tekrar siralama tamamlandiAccomodations
+          records:
+            title: Accomodations
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Accomodations yok henuz.  Tikla "Yeni Ekle
+              Accomodation" eklemek senin ilk accomodation.
+          accomodation:
+            view_live_html: Bunu canlu accomodation goruntule <br/><em>(yeni bir pencerede
+              acar)</em>
+            edit: Bunu Duzenle accomodation
+            delete: Bunu Sil accomodation sonsuza dek
+      businesses:
+        show:
+          other: Diger Businesses
+      prices:
+        show:
+          other: Diger Prices
+      addresses:
+        show:
+          other: Diger Addresses
+      accomodation_types:
+        show:
+          other: Diger Accomodation Types
+      accomodations:
+        show:
+          other: Diger Accomodations
+  activerecord:
+    attributes:
+      refinery/accomodations/business:
+        name: Name
+        details: Details
+        licence: Licence
+        nic: Nic
+        url: Url
+        phone: Phone
+        email: Email
+      refinery/accomodations/price:
+        original: Original
+        after_discount: After Discount
+        distribution: Distribution
+        accomodation_id: Accomodation
+      refinery/accomodations/address:
+        street: Street
+        town: Town
+        district: District
+        state: State
+        country: Country
+        lat: Lat
+        lng: Lng
+        alt: Alt
+        accomodation_id: Accomodation
+      refinery/accomodations/accomodation_type:
+        name: Name
+      refinery/accomodations/accomodation:
+        name: Name
+        details: Details
+        teaser_image: Teaser Image
+        phone_number: Phone Number
+        email: Email
+        url: Url
+        user_id: User

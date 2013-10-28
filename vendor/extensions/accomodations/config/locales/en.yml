@@ -1,0 +1,136 @@
+en:
+  refinery:
+    plugins:
+      businesses:
+        title: Businesses
+      prices:
+        title: Prices
+      addresses:
+        title: Addresses
+      accomodation_types:
+        title: Accomodation Types
+      accomodations:
+        title: Accomodations
+    accomodations:
+      admin:
+        businesses:
+          actions:
+            create_new: Add New Business
+            reorder: Reorder Businesses
+            reorder_done: Done Reordering Businesses
+          records:
+            title: Businesses
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Businesses yet. Click "Add New Business" to
+              add your first business.
+          business:
+            view_live_html: View this business live <br/><em>(opens in a new window)</em>
+            edit: Edit this business
+            delete: Remove this business forever
+        prices:
+          actions:
+            create_new: Add New Price
+            reorder: Reorder Prices
+            reorder_done: Done Reordering Prices
+          records:
+            title: Prices
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Prices yet. Click "Add New Price" to add your
+              first price.
+          price:
+            view_live_html: View this price live <br/><em>(opens in a new window)</em>
+            edit: Edit this price
+            delete: Remove this price forever
+        addresses:
+          actions:
+            create_new: Add New Address
+            reorder: Reorder Addresses
+            reorder_done: Done Reordering Addresses
+          records:
+            title: Addresses
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Addresses yet. Click "Add New Address" to add
+              your first address.
+          address:
+            view_live_html: View this address live <br/><em>(opens in a new window)</em>
+            edit: Edit this address
+            delete: Remove this address forever
+        accomodation_types:
+          actions:
+            create_new: Add New Accomodation Type
+            reorder: Reorder Accomodation Types
+            reorder_done: Done Reordering Accomodation Types
+          records:
+            title: Accomodation Types
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Accomodation Types yet. Click "Add New Accomodation
+              Type" to add your first accomodation type.
+          accomodation_type:
+            view_live_html: View this accomodation type live <br/><em>(opens in a
+              new window)</em>
+            edit: Edit this accomodation type
+            delete: Remove this accomodation type forever
+        accomodations:
+          actions:
+            create_new: Add New Accomodation
+            reorder: Reorder Accomodations
+            reorder_done: Done Reordering Accomodations
+          records:
+            title: Accomodations
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Accomodations yet. Click "Add New Accomodation"
+              to add your first accomodation.
+          accomodation:
+            view_live_html: View this accomodation live <br/><em>(opens in a new window)</em>
+            edit: Edit this accomodation
+            delete: Remove this accomodation forever
+      businesses:
+        show:
+          other: Other Businesses
+      prices:
+        show:
+          other: Other Prices
+      addresses:
+        show:
+          other: Other Addresses
+      accomodation_types:
+        show:
+          other: Other Accomodation Types
+      accomodations:
+        show:
+          other: Other Accomodations
+  activerecord:
+    attributes:
+      refinery/accomodations/business:
+        name: Name
+        details: Details
+        licence: Licence
+        nic: Nic
+        url: Url
+        phone: Phone
+        email: Email
+      refinery/accomodations/price:
+        original: Original
+        after_discount: After Discount
+        distribution: Distribution
+        accomodation_id: Accomodation
+      refinery/accomodations/address:
+        street: Street
+        town: Town
+        district: District
+        state: State
+        country: Country
+        lat: Lat
+        lng: Lng
+        alt: Alt
+        accomodation_id: Accomodation
+      refinery/accomodations/accomodation_type:
+        name: Name
+      refinery/accomodations/accomodation:
+        name: Name
+        details: Details
+        teaser_image: Teaser Image
+        phone_number: Phone Number
+        email: Email
+        url: Url
+        user_id: User

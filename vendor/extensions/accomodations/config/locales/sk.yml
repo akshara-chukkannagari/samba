@@ -1,0 +1,137 @@
+sk:
+  refinery:
+    plugins:
+      businesses:
+        title: Businesses
+      prices:
+        title: Prices
+      addresses:
+        title: Addresses
+      accomodation_types:
+        title: Accomodation Types
+      accomodations:
+        title: Accomodations
+    accomodations:
+      admin:
+        businesses:
+          actions:
+            create_new: Pridať Business
+            reorder: Preusporiadať Businesses
+            reorder_done: Koniec radenia Businesses
+          records:
+            title: Businesses
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Businesses. Kliknite na "Pridať
+              Business" pre pridanie prvého business.
+          business:
+            view_live_html: Zobraziť náhľad business<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť business
+            delete: Zmazať business
+        prices:
+          actions:
+            create_new: Pridať Price
+            reorder: Preusporiadať Prices
+            reorder_done: Koniec radenia Prices
+          records:
+            title: Prices
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Prices. Kliknite na "Pridať Price"
+              pre pridanie prvého price.
+          price:
+            view_live_html: Zobraziť náhľad price<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť price
+            delete: Zmazať price
+        addresses:
+          actions:
+            create_new: Pridať Address
+            reorder: Preusporiadať Addresses
+            reorder_done: Koniec radenia Addresses
+          records:
+            title: Addresses
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Addresses. Kliknite na "Pridať Address"
+              pre pridanie prvého address.
+          address:
+            view_live_html: Zobraziť náhľad address<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť address
+            delete: Zmazať address
+        accomodation_types:
+          actions:
+            create_new: Pridať Accomodation Type
+            reorder: Preusporiadať Accomodation Types
+            reorder_done: Koniec radenia Accomodation Types
+          records:
+            title: Accomodation Types
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Accomodation Types. Kliknite na
+              "Pridať Accomodation Type" pre pridanie prvého accomodation type.
+          accomodation_type:
+            view_live_html: Zobraziť náhľad accomodation type<br/><em>(otvorí sa v
+              novom okne)</em>
+            edit: Upraviť accomodation type
+            delete: Zmazať accomodation type
+        accomodations:
+          actions:
+            create_new: Pridať Accomodation
+            reorder: Preusporiadať Accomodations
+            reorder_done: Koniec radenia Accomodations
+          records:
+            title: Accomodations
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Accomodations. Kliknite na "Pridať
+              Accomodation" pre pridanie prvého accomodation.
+          accomodation:
+            view_live_html: Zobraziť náhľad accomodation<br/><em>(otvorí sa v novom
+              okne)</em>
+            edit: Upraviť accomodation
+            delete: Zmazať accomodation
+      businesses:
+        show:
+          other: Daľšie Businesses
+      prices:
+        show:
+          other: Daľšie Prices
+      addresses:
+        show:
+          other: Daľšie Addresses
+      accomodation_types:
+        show:
+          other: Daľšie Accomodation Types
+      accomodations:
+        show:
+          other: Daľšie Accomodations
+  activerecord:
+    attributes:
+      refinery/accomodations/business:
+        name: Name
+        details: Details
+        licence: Licence
+        nic: Nic
+        url: Url
+        phone: Phone
+        email: Email
+      refinery/accomodations/price:
+        original: Original
+        after_discount: After Discount
+        distribution: Distribution
+        accomodation_id: Accomodation
+      refinery/accomodations/address:
+        street: Street
+        town: Town
+        district: District
+        state: State
+        country: Country
+        lat: Lat
+        lng: Lng
+        alt: Alt
+        accomodation_id: Accomodation
+      refinery/accomodations/accomodation_type:
+        name: Name
+      refinery/accomodations/accomodation:
+        name: Name
+        details: Details
+        teaser_image: Teaser Image
+        phone_number: Phone Number
+        email: Email
+        url: Url
+        user_id: User

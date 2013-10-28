@@ -1,0 +1,53 @@
+<div class="hero-unit">
+	<span class="label label-info"> <h2> <%= @accomodation.name %> </h2> </span>
+	<p>
+		<a href="/" class="btn btn-success">home</a>
+	</p>
+	
+</div>
+
+<%@images = @accomodation.teaser_image_id%>
+<div class="row">
+	<div class="col-xs-12 col-sm-6 col-md-9">
+		<%= render "image_gallery"%>
+		<span class="label label-success"> Details </span>
+		<p class="samba_text">
+			<%= raw @accomodation.details %>
+		</p>
+
+		<div>
+			<span class="label label-success">Phone Number</span>
+			<p>
+				<%= raw @accomodation.phone_number %>
+			</p>
+		</div>
+		<div>
+			<span  class="label label-success">Email</span>
+			<p>
+				<%= raw @accomodation.email %>
+			</p>
+		</div>
+		<div>
+			<span  class="label label-success">Url</span>
+			<p>
+				<%= raw @accomodation.url %>
+			</p>
+		</div>
+
+	</div>
+
+	<div class="col-xs-6 col-sm-6 col-md-3 panel panel-success">
+
+		<aside>
+			<h3><%= t('.other') %></h3>
+			<ul id="accomodations">
+				<% @accomodations.each do |accomodation| %>
+				<li>
+					<%= link_to accomodation.name, refinery.accomodations_accomodation_path(accomodation) %>
+				</li>
+				<% end %>
+			</ul>
+		</aside>
+
+	</div>
+</div>

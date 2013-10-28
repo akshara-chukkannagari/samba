@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Accomodations::Admin::AccomodationsController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.accomodations_admin_accomodations_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_accomodations_admin_accomodation_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Accomodations::Admin::AccomodationsController.sortable? && ::Refinery::Accomodations::Accomodation.many? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Accomodations"),
+                 refinery.accomodations_admin_accomodations_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Accomodations"),
+                 refinery.accomodations_admin_accomodations_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

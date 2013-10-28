@@ -1,0 +1,54 @@
+<div class="container container">
+	<div class="row">
+		<div class="col-md-8">
+
+			<h2>
+			<p class="label label-info">
+				enter your trip dates
+			</p></h2>
+
+			<%=form_for "home", :url => "hotel/search", :html => { :class=> "form-horizontal"}, :method=> :get do |f|%>
+			<%= f.label "from", :class => "search_form_text label label-success"%>
+			<div class="form-group">
+				<div class="col-lg-10">
+					<%= f.text_field :start_date  %>
+				</div>
+			</div>
+			<%= f.label "till", :class => "search_form_text label label-success"%>
+			<div class="form-group">
+
+				<div class="col-lg-10">
+					<%= f.text_field :end_date %>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-lg-10">
+					<%= f.submit "Go!", :class => "btn btn-primary"%>
+				</div>
+			</div>
+			<%end%>
+		</div>
+		<div class="col-md-4">
+			<div class="panel panel-heading">
+				<p>
+					<h4>Your Planet is Your Home</h4>
+				</p>
+
+				<div>
+					<%@businesses.each do |business|%>
+					<a href="#" class="btn btn-primary btn-xs"> <span class="badge"><%= business.accomodations.length%></span> 
+						<%= business.name%></a>
+					<%end%>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	$(function() {
+		$("#home_start_date").datepicker();
+		$("#home_end_date").datepicker();
+	});
+
+</script>

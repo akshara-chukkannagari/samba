@@ -1,0 +1,46 @@
+  <div class='field'> 
+    <%= f.label :title -%> 
+    <%= f.text_field :title, :class => 'larger widest'  -%> 
+  </div> 
+
+  <div class='field'> 
+    <div id='page-tabs' class='clearfix ui-tabs ui-widget ui-widget- 
+content ui-corner-all'> 
+      <ul id='page_parts'> 
+        <% [:man].each_with_index do |part, part_index| %> 
+          <li class='ui-state-default<%= ' ui-state-active' if 
+part_index == 0 %>'> 
+            <%= link_to part.to_s.titleize, "##{part}" %> 
+          </li> 
+
+<!-- This is the additional code block --> 
+                  <li class='ui-state-default' id="custom_fotog_tab"> 
+                        <%= link_to 'Fotogallery', "#custom_tab_foto" %> 
+                  </li> 
+<!-- This is the end of additional code block--> 
+        <% end %> 
+      </ul> 
+
+      <div id='page_part_editors'> 
+        <% [:man].each do |part| %> 
+          <div class='page_part' id='<%= part %>'> 
+            <%= f.text_area part, :rows => 20, :class => 'wymeditor 
+widest' -%> 
+          </div> 
+
+<!-- This is the additional code block --> 
+              <div class='page_part' id='custom_tab_foto'> 
+                  <!-- <div class='field'> --> 
+                      <!-- <%= f.label "Image Gallery" -%> --> 
+                      <%= render :partial => "/admin/pages/tabs/images", :locals => 
+{ 
+                        :f => f 
+                      } %> 
+                    </div> 
+<!-- This is the additional code block --> 
+
+        <% end %> 
+
+      </div> 
+    </div> 
+  </div> 
