@@ -11,7 +11,8 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131027125727) do
+
+ActiveRecord::Schema.define(:version => 20131028090418) do
 
   create_table "refinery_accomodations", :force => true do |t|
     t.string   "name"
@@ -29,7 +30,6 @@ ActiveRecord::Schema.define(:version => 20131027125727) do
     t.datetime "available_till"
     t.boolean  "sold_out"
     t.integer  "business_id"
-    t.string   "langugage"
     t.string   "language"
   end
 
