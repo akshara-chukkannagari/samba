@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131026220436) do
+ActiveRecord::Schema.define(:version => 20131028090418) do
 
   create_table "refinery_accomodations", :force => true do |t|
     t.string   "name"
@@ -29,7 +29,6 @@ ActiveRecord::Schema.define(:version => 20131026220436) do
     t.datetime "available_till"
     t.boolean  "sold_out"
     t.integer  "business_id"
-    t.string   "langugage"
     t.string   "language"
   end
 
@@ -65,10 +64,9 @@ ActiveRecord::Schema.define(:version => 20131026220436) do
     t.string   "url"
     t.string   "phone"
     t.string   "email"
-    t.integer  "business_id"
     t.integer  "position"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "refinery_accomodations_prices", :force => true do |t|
@@ -206,6 +204,7 @@ ActiveRecord::Schema.define(:version => 20131026220436) do
     t.integer  "position"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+    t.string   "language"
   end
 
   create_table "refinery_settings", :force => true do |t|

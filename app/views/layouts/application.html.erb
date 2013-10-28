@@ -10,8 +10,28 @@
 	</head>
 		
 	<body class="home_page_style">
-		<div class="container container-fluid samba_content">
-			<%= yield %>
-		</div>
+	 <div class="container container samba_content">
+		<div id="fb-root"></div>
+                <script>
+                        ( function(d, s, id) {
+                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                        if (d.getElementById(id))
+                                                return;
+                                        js = d.createElement(s);
+                                        js.id = id;
+                                        js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=330650633746201";
+                                        fjs.parentNode.insertBefore(js, fjs);
+                                }(document, 'script', 'facebook-jssdk'));
+                </script>
+               
+                                <div class="col-1 pull-right">
+                  <div class="fb-like" data-href="http://gulguling.com" data-width="100px" data-height="30px" data-colorscheme="light" 
+                  data-layout="standard" data-action="like" data-show-faces="true" data-send="false"></div>        
+                </div>
+                        <%= yield %>
+                        
+        
+                
+                </div>
 	</body>
 </html>

@@ -8,6 +8,10 @@
 	<%= f.text_field :title, :class => 'larger widest' -%>
 </div>
 
+<div class="field">
+ <%= f.label :language %>
+ <%= f.select :language, LANGUAGE_CODES %>
+</div>
 <div class='field'>
 	<%= render '/refinery/admin/wysiwyg',
 	:f => f,
