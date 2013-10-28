@@ -63,10 +63,9 @@ ActiveRecord::Schema.define(:version => 20131023114732) do
     t.string   "url"
     t.string   "phone"
     t.string   "email"
-    t.integer  "business_id"
     t.integer  "position"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "refinery_accomodations_prices", :force => true do |t|
