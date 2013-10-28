@@ -3,4 +3,7 @@ class HotelController < ApplicationController
   def search
     @accomodations = Refinery::Accomodations::Accomodation.all
   end
+  
+  def coming_soon
+  end
 end

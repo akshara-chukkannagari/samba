@@ -1,6 +1,7 @@
 Safari::Application.routes.draw do
 
   get "hotel/search"
+  get "hotel/coming_soon"
 
   # This line mounts Refinery's routes at the root of your application.
   # This means, any requests to the root URL of your application will go to Refinery::PagesController#home.

@@ -1,6 +1,6 @@
-<div class="container container-fluid">
+<div class="container container">
 	<div class="row">
-		<div class="col-md-6">
+		<div class="col-md-8">
 
 			<h2>
 			<p class="label label-info">
@@ -28,12 +28,16 @@
 			</div>
 			<%end%>
 		</div>
-		<div class="col-md-6 label label-success">
-			<div class="samba_content">
-				<h3>Discover Hidden Gems of the Unknown World</h3>
+		<div class="col-md-4">
+			<div class="panel panel-heading">
+				<p>
+					<h4>Your Planet is Your Home</h4>
+				</p>
+
 				<div>
 					<%@businesses.each do |business|%>
-					<a href="#" class="btn btn-primary btn-xs"> <span class="badge"><%= business.accomodations.length%></span> <%= business.address.town %></a>
+					<a href="#" class="btn btn-primary btn-xs"> <span class="badge"><%= business.accomodations.length%></span> 
+						<%= business.name%></a>
 					<%end%>
 				</div>
 			</div>

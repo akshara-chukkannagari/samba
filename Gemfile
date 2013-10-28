@@ -51,7 +51,7 @@ gem 'refinerycms-acts-as-indexed', '~> 1.0.0'
 #gem 'refinerycms-music'
 #  gem 'refinerycms-search', '~> 2.1.0'
 gem 'refinerycms-page-images', '~> 2.1.0'
-
+gem 'refinerycms-search', '~> 2.1.0'
 gem 'refinerycms-accomodations', :path => 'vendor/extensions'
 gem 'refinerycms-accomodation_types', :path => 'vendor/extensions'
 

@@ -6,6 +6,8 @@ module Refinery
       attr_accessible :title, :description, :user_id, :position
        has_many_page_images 
       validates :title, :presence => true, :uniqueness => true
+      
+      acts_as_indexed :fields => [:title, :description]
     end
   end
 end
