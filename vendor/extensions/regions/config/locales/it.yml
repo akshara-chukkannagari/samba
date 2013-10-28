@@ -1,0 +1,30 @@
+it:
+  refinery:
+    plugins:
+      regions:
+        title: Regions
+    regions:
+      admin:
+        regions:
+          actions:
+            create_new: Aggiungi Nuovo Region
+            reorder: Riordina Regions
+            reorder_done: Termina il Riordino di Regions
+          records:
+            title: Regions
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Regions. Clicca "Aggiungi Nuovo Region" per aggiungere il tuo primo region.
+          region:
+            view_live_html: Guarda live questo region <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo region
+            delete: Rimuovi per sempre questo region
+      regions:
+        show:
+          other: Altri Regions
+  activerecord:
+    attributes:
+      'refinery/regions/region':
+        name: Name
+        description: Description
+        url: Url
+        user_id: User

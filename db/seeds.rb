@@ -14,3 +14,6 @@ Refinery::Accomodations::Engine.load_seed
 
 # Added by Refinery CMS SambaContents extension
 Refinery::SambaContents::Engine.load_seed
+
+# Added by Refinery CMS Regions extension
+Refinery::Regions::Engine.load_seed

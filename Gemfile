@@ -57,3 +57,4 @@ gem 'refinerycms-accomodation_types', :path => 'vendor/extensions'
 
 
 gem 'refinerycms-samba_contents', :path => 'vendor/extensions'
+gem 'refinerycms-regions', :path => 'vendor/extensions'

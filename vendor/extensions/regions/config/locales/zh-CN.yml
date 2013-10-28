@@ -1,0 +1,32 @@
+zh-CN:
+  refinery:
+    plugins:
+      regions:
+        title: Regions
+    regions:
+      admin:
+        regions:
+          actions:
+            create_new: 建立新的 Region
+            reorder: 对 Regions 重新排序
+            reorder_done: 对 Regions 的重新排序结束
+          records:
+            title: Regions
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Regions yet. Click "Add New Region" to add your first region.
+            no_items_yet: 目前没有 Regions . 点击 "Add New Region" 创建一个region.
+          region:
+            view_live_html: 查看 region 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 region
+            delete: 永久删除 region
+      regions:
+        show:
+          other: 其他 Regions
+  activerecord:
+    attributes:
+      'refinery/regions/region':
+        name: Name
+        description: Description
+        url: Url
+        user_id: User

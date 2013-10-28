@@ -1,0 +1,30 @@
+tr:
+  refinery:
+    plugins:
+      regions:
+        title: Regions
+    regions:
+      admin:
+        regions:
+          actions:
+            create_new: Yeni Ekle Region
+            reorder: Tekrar sirala Regions
+            reorder_done: Tekrar siralama tamamlandiRegions
+          records:
+            title: Regions
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Regions yok henuz.  Tikla "Yeni Ekle Region" eklemek senin ilk region.
+          region:
+            view_live_html: Bunu canlu region goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle region
+            delete: Bunu Sil region sonsuza dek
+      regions:
+        show:
+          other: Diger Regions
+  activerecord:
+    attributes:
+      'refinery/regions/region':
+        name: Name
+        description: Description
+        url: Url
+        user_id: User

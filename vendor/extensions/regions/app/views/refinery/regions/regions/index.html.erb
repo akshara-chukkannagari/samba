@@ -1,0 +1,16 @@
+<div class="container">
+	<% @regions.each do |region| %>
+	<div class="row panel panel-heading">
+		<div class="span6">
+			<h3>
+				<%= region.name %>
+			</h3>
+		</div>
+		<div class="span3">
+				<a href="<%= refinery.regions_region_path(region)%>" class="btn btn-primary btn-inline"> visit </a>
+		</div>
+
+	</div>
+	<% end %>
+</div>
+

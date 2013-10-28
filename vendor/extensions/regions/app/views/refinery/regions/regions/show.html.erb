@@ -1,0 +1,37 @@
+<div class="container container">
+
+	<div class="row">
+		<div class="jumbotron">
+			<h2><%= @region.name %></h2>
+		</div>
+	</div>
+
+	<div class="row">
+		<p class="label label-success">
+			about
+		</p>
+
+		<p>
+			<%= raw @region.description %>
+		</p>
+	</div>
+
+	<div class="row">
+		<p class="label label-success">
+			web
+		</p>
+		<p>
+			<%= raw @region.url %>
+			</p>
+		
+	</div>
+
+	<div class="row">
+			<p class="label label-info">auther</p>
+			<p>
+				<%= raw @region.user_id %>
+			</p>
+			
+	</div>
+
+</div>
