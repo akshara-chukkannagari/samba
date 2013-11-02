@@ -65,11 +65,11 @@ module Safari
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
     
-    initializer 'override-image-magick-paths', :after => 'attach-refinery-images-with-dragonfly' do
-      Dragonfly[:refinery_images].configure do |c|
-        c.convert_command = "/user/bin/convert"          # defaults to "convert"
-        c.identify_command = "/user/bin/identify"        # defaults to "identify"
-      end
+  #  initializer 'override-image-magick-paths', :after => 'attach-refinery-images-with-dragonfly' do
+   #   Dragonfly[:refinery_images].configure do |c|
+    #    c.convert_command = "/user/bin/convert"          # defaults to "convert"
+     #   c.identify_command = "/user/bin/identify"        # defaults to "identify"
+      #end
     end
   end
 end
