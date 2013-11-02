@@ -71,5 +71,5 @@ module Safari
      #   c.identify_command = "/user/bin/identify"        # defaults to "identify"
       #end
     end
-  end
+
 end
